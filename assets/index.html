@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.S Solutions | Cutting-Edge IT Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="logo-icon">SS</span>
+                    <span class="logo-text">SOLUTIONS</span>
+                </div>
+                <div class="mobile-menu-btn" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#contact" class="btn btn-nav">Get Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeInLeft">
+                <h4 class="subtitle">RELIABLE WEB & IT SERVICES</h4>
+                <h1 class="title">
+                   We Build & Fix <span class="typing"></span>
+                </h1>
+                <p class="hero-text">
+                   S.S Solutions delivers fast, modern websites and IT support that helps your businesses grow online and offline. Whether you need a new site or network setup—we're here to help.
+                </p>
+                <div class="hero-buttons">
+                   <a href="#contact" class="btn btn-primary pulse">Request a Quote</a>
+                   <a href="#portfolio" class="btn btn-outline">See Our Work</a>
+                </div>
+            </div>
+            <div class="hero-image animate__animated animate__fadeInRight">
+                <div class="floating-card">
+                    <img src="assets/2.png" alt="Digital Solutions">
+                    <div class="tech-icons">
+                        <i class="ri-html5-fill"></i>
+                        <i class="ri-css3-fill"></i>
+                        <i class="ri-javascript-fill"></i>
+                        <i class="ri-reactjs-fill"></i>
+                        <i class="ri-nodejs-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="scroller"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+                Affordable digital solutions for small businesses, startups, and professionals
+            </p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="ri-code-s-slash-line"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>Web Development</h3>
+                <p>Modern, fast websites built to grow your brand, attract customers, and work great on any device.</p>
+                <a href="javascript:void(0)" class="service-link" onclick="openModal('webDevelopmentModal')">
+                    <span>Learn More</span>
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+                <div class="service-badge">From 18,000 Ksh</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="ri-palette-line"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Professional designs that capture your brand's essence and make a lasting impression.</p>
+                <a href="javascript:void(0)" class="service-link" onclick="openModal('graphicDesignModal')">
+                    <span>Learn More</span>
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+                <div class="service-badge">From 500 Ksh</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="ri-server-line"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>IT Infrastructure</h3>
+                <p>Complete network solutions including design, setup, and maintenance.</p>
+                <a href="javascript:void(0)" class="service-link" onclick="openModal('itInfrastructureModal')">
+                    <span>Learn More</span>
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+                <div class="service-badge">Custom Quote</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="ri-calendar-check-line"></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>Booking Systems</h3>
+                <p>Custom appointment systems with automated scheduling and payments.</p>
+                <a href="javascript:void(0)" class="service-link" onclick="openModal('bookingSystemsModal')">
+                    <span>Learn More</span>
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+                <div class="service-badge">From 30,000 Ksh</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Web Development Modal -->
+<div id="webDevelopmentModal" class="service-modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('webDevelopmentModal')">&times;</span>
+        <h2>Web Development - From 18,000 Ksh</h2>
+        <p>Modern websites designed to help your business grow:</p>
+        <ul>
+            <li><strong>Responsive Design:</strong> Looks great on any device.</li>
+            <li><strong>SEO Optimized:</strong> Designed to rank well on search engines.</li>
+            <li><strong>Custom Features:</strong> Tailored to your business needs.</li>
+            <li><strong>Fast & Secure:</strong> Reliable performance and data protection.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Graphic Design Modal -->
+<div id="graphicDesignModal" class="service-modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('graphicDesignModal')">&times;</span>
+        <h2>Graphic Design - From 500 Ksh</h2>
+        <p>High-quality designs tailored to your brand:</p>
+        <ul>
+            <li><strong>Logo Design:</strong> A unique logo to represent your brand identity.</li>
+            <li><strong>Business Cards:</strong> Professionally designed business cards to make a great first impression.</li>
+            <li><strong>Brochures & Flyers:</strong> Eye-catching brochures and flyers to promote your services.</li>
+            <li><strong>Social Media Graphics:</strong> Engaging posts and banners to boost your online presence.</li>
+        </ul>
+
+        <!-- Image Carousel -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="./assets/Untitled design.png" alt="Graphic Work 1" onclick="openImagePopup('./assets/Untitled design.png', 'Logo Design for Geotronics')">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Cyan Online Ordering Process Flow Chart.png" alt="Graphic Work 2" onclick="openImagePopup('./assets/Cyan Online Ordering Process Flow Chart.png', 'Poster designs for Oya Micro Credit')">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Gold Elegant New Year's Eve Party Invitation.png" alt="Graphic Work 3" onclick="openImagePopup('./assets/Gold Elegant New Years Eve Party Invitation.png', 'party poster for Oya Micro Credit.')">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Green Modern Did You Know Instagram Post.png" alt="Graphic Work 3" onclick="openImagePopup('./assets/Green Modern Did You Know Instagram Post.png', 'Social media poster for Oya Micro Credit.')">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/background 2.png" alt="Graphic Work 3" onclick="openImagePopup('./assets/background 2.png', 'sonny sayi services logo.')">
+                </div> 
+                <div class="carousel-item">
+                    <img src="./assets/rupal racing.png" alt="Graphic Work 3" onclick="openImagePopup('./assets/rupal racing.png', 'rupal racing retractable banner.')">
+                </div> 
+            </div>
+            <button class="carousel-prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="carousel-next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+
+        <!-- Full Image Popup -->
+        <div id="imagePopup" class="image-popup" style="display: none;">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closeImagePopup()">&times;</span>
+                <img id="popupImage" src="" alt="Popup Image">
+                <p id="popupDescription"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- IT Infrastructure Modal -->
+<div id="itInfrastructureModal" class="service-modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('itInfrastructureModal')">&times;</span>
+        <h2>IT Infrastructure - Custom Quote</h2>
+        <p>Complete network solutions:</p>
+        <ul>
+            <li><strong>Network Setup:</strong> Design and implementation of your IT infrastructure.</li>
+            <li><strong>Maintenance:</strong> Regular updates and troubleshooting.</li>
+            <li><strong>Data Security:</strong> Protection against cyber threats.</li>
+            <li><strong>Cloud Solutions:</strong> Scalable cloud-based infrastructure.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Booking Systems Modal -->
+<div id="bookingSystemsModal" class="service-modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('bookingSystemsModal')">&times;</span>
+        <h2>Booking Systems - From 30,000 Ksh</h2>
+        <p>Custom appointment systems with automated scheduling and payments:</p>
+        <ul>
+            <li><strong>Online Booking:</strong> Clients can book appointments 24/7.</li>
+            <li><strong>Automated Reminders:</strong> Notifications sent to both clients and businesses.</li>
+            <li><strong>Custom Features:</strong> Tailored for your business needs.</li>
+            <li><strong>Payment Integration:</strong> Accept payments online securely.</li>
+        </ul>
+    </div>
+</div>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Explore our collection of successful projects</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="assets/explore ke.PNG" alt="Explore Kenya">
+                    <div class="portfolio-overlay">
+                        <h3>Explore Kenya</h3>
+                        <a href="https://ssayi91.github.io/Explore-Kenya/" target="_blank" class="portfolio-link">
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="assets/geotronics.PNG" alt="Geotronics">
+                    <div class="portfolio-overlay">
+                        <h3>Geotronics</h3>
+                        <a href="https://geotronics.co.ke/" target="_blank" class="portfolio-link">
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="assets/gift center.PNG" alt="Gift Center">
+                    <div class="portfolio-overlay">
+                        <h3>Gift Center</h3>
+                        <a href="https://ssayi91.github.io/Gift-Center/" target="_blank" class="portfolio-link">
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="assets/dinga world 1.PNG" alt="Dinga World">
+                    <div class="portfolio-overlay">
+                        <h3>Dinga World</h3>
+                        <a href="https://dinga-world-v2-main.onrender.com/" target="_blank" class="portfolio-link">
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="assets/salon.PNG" alt="Salon-booking-">
+                    <div class="portfolio-overlay">
+                        <h3>Salon-booking</h3>
+                        <a href="https://ssayi91.github.io/Salon-booking-/" target="_blank" class="portfolio-link">
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="assets/grand estate.PNG" alt="Real Estate">
+                    <div class="portfolio-overlay">
+                        <h3>Real Grand-Estates</h3>
+                        <a href="https://ssayi91.github.io/Grand-Estates/" target="_blank" class="portfolio-link">
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Need help with your website or network? Let's talk—no strings attached.</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="ri-map-pin-line"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Location</h3>
+                        <p>Nairobi, Kenya</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="ri-mail-line"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p>sonny.sayi@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="ri-phone-line"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Phone</h3>
+                        <!-- <p>+254 793 514 006</p> -->
+                        <p>+254 736 194 051</p>
+                    </div>
+                </div>
+                
+                <!-- WhatsApp Contact Button -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="ri-whatsapp-line"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>WhatsApp</h3>
+                        <p>Contact us on WhatsApp for a quick response and quotes.</p>
+                        <a href="https://wa.me/254736194051" target="_blank" class="btn btn-primary">Chat on WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="contact-social">
+                    <a href="#" class="social-icon"><i class="ri-facebook-fill"></i></a>
+                    <a href="#" class="social-icon"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="#" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#" class="social-icon"><i class="ri-instagram-line"></i></a>
+                </div>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary submit-button">
+                    <span>Send Message</span>
+                    <i class="ri-send-plane-line"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <span>SS</span>
+                    <h3>S.S Solutions</h3>
+                </div>
+                <p>
+                    We deliver cutting-edge digital solutions that help businesses 
+                    thrive in the modern technological landscape.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">IT Infrastructure</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">Support & Maintenance</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit"><i class="ri-send-plane-line"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; <span id="current-year"></span> S.S Solutions. All Rights Reserved.
+            </div>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>

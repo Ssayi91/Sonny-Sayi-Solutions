@@ -1,0 +1,70 @@
+   body {
+      font-family: 'Space Grotesk', sans-serif;
+      transition: background 0.3s, color 0.3s;
+    }
+    .hero-bg {
+      background: linear-gradient(120deg, #f8fafc, #e2e8f0);
+    }
+    .dark .hero-bg {
+      background: linear-gradient(120deg, #111827, #1f2937);
+    }
+    .portfolio-item {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    .nav-link {
+      position: relative;
+    }
+    .nav-link:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: currentColor;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover:after {
+      width: 100%;
+    }
+    .quote-btn {
+      background: linear-gradient(90deg, #4f46e5, #7c3aed);
+      transition: all 0.3s ease;
+    }
+    .quote-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+    }
+    .pricing-card {
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+    .dark .pricing-card {
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .pricing-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    .dark .pricing-card:hover {
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+    .popular-plan {
+      position: relative;
+      border: 2px solid #4f46e5;
+    }
+    .popular-badge {
+      position: absolute;
+      top: -12px;
+      right: 20px;
+      background: #4f46e5;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
