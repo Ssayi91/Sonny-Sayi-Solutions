@@ -1,872 +1,389 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>S.S Solutions | Digital Experience Studio</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonny Sayi Solutions | IT Services & Digital Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
-
-  <!-- Navigation -->
-  <header class="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-sm">
-    <div class="container mx-auto px-4">
-      <nav class="flex justify-between items-center py-4">
-        <div class="text-xl font-bold">S.S Solutions</div>
-        
-        <div class="hidden md:flex items-center space-x-8">
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#services" class="nav-link">Services</a>
-          <a href="#pricing" class="nav-link">Pricing</a>
-          <a href="#portfolio" class="nav-link">Portfolio</a>
-          <a href="#contact" class="nav-link">Contact</a>
-          <a href="#contact" class="quote-btn px-5 py-2 rounded-full font-semibold text-white">Get Quote</a>
-        </div>
-        
-        <!-- Mobile menu button -->
-        <button id="mobileMenuBtn" class="md:hidden text-2xl">
-          <i class="fas fa-bars"></i>
-        </button>
-      </nav>
-      
-      <!-- Mobile Menu -->
-     <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg absolute left-4 right-4 top-20 z-[60]">
-
-        <div class="flex flex-col space-y-4">
-          <a href="#home" class="nav-link py-2">Home</a>
-          <a href="#services" class="nav-link py-2">Services</a>
-          <a href="#pricing" class="nav-link py-2">Pricing</a>
-          <a href="#portfolio" class="nav-link py-2">Portfolio</a>
-          <a href="#contact" class="nav-link py-2">Contact</a>
-          <a href="#contact" class="quote-btn px-5 py-2 rounded-full font-semibold text-white text-center">Get Quote</a>
-        </div>
-      </div>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+        <div class="loader-text">Loading S.S Solutions...</div>
     </div>
-  </header>
 
-  <!-- Toggle Dark/Light -->
-  <div class="fixed top-4 right-4 z-50">
-    <button id="toggleTheme" class="bg-gray-200 dark:bg-gray-800 text-black dark:text-white px-3 py-2 rounded-full shadow">
-      <i class="fas fa-moon dark:hidden"></i>
-      <i class="fas fa-sun hidden dark:inline-block"></i>
-    </button>
-  </div>
-
-  <!-- Hero Section -->
-<section id="home" class="min-h-screen hero-bg flex flex-col items-center justify-center text-center px-4 py-16 relative overflow-hidden">
-  <h1 class="text-4xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-[#C4B5FD]">
-    We Build Experiences That Work
-  </h1>
-  <p class="text-lg md:text-xl max-w-xl mx-auto text-gray-700 dark:text-[#C4B5FD]">
-    Web & Graphic Design. Networking. IT Consultancy. Made to move with the future.
-  </p>
-
-  <!-- Value Points Section -->
-  <div class="grid gap-6 mt-6 md:grid-cols-3 max-w-6xl mx-auto px-4">
-    <div class="text-gray-600 dark:text-gray-300 text-sm md:text-base">
-      <div class="text-2xl mb-2"></div>
-      <p>No business is too small for the web. A modern website builds trust, runs 24/7, and turns visitors into customers.</p>
-    </div>
-    <div class="text-gray-600 dark:text-gray-300 text-sm md:text-base">
-      <div class="text-2xl mb-2"></div>
-      <p>We design structured networks that stay organized, monitored, and ready — no more guesswork when things break.</p>
-    </div>
-    <div class="text-gray-600 dark:text-gray-300 text-sm md:text-base">
-      <div class="text-2xl mb-2"></div>
-      <p>Your brand deserves attention. Our bold, clean designs make flyers, posts, and banners impossible to ignore.</p>
-    </div>
-  </div>
-
-  <!-- CTA Buttons -->
-  <div class="mt-10 flex flex-col sm:flex-row gap-4">
-    <a href="#portfolio" class="px-6 py-3 bg-black text-white dark:bg-white dark:text-black rounded-full font-bold hover:scale-105 transition-transform text-lg">
-      View Our Work
-    </a>
-    <a href="#pricing" class="px-6 py-3 border-2 border-black dark:border-white rounded-full font-semibold hover:scale-105 transition-transform text-[#C4B5FD] text-lg">
-      See Pricing
-    </a>
-  </div>
-
-  <!-- Scroll Indicator -->
-  <div class="absolute bottom-6 animate-bounce">
-    <a href="#services" class="text-2xl text-gray-700 dark:text-[#C4B5FD]">
-      <i class="fas fa-chevron-down"></i>
-    </a>
-  </div>
-</section>
-
-
-  <!-- Services Section -->
-  <section id="services" class="py-24 px-6 md:px-20 bg-gray-50 dark:bg-gray-800 scroll-mt-16">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl font-semibold mb-4">✨ What We Do</h2>
-      <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">Comprehensive digital solutions tailored to your business needs</p>
-    </div>
-    
-    <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-      <div class="p-8 rounded-xl bg-white dark:bg-gray-900 shadow-md hover:scale-[1.02] transition-transform">
-        <div class="flex items-start">
-          <div class="text-3xl mr-4 text-blue-500"><i class="fas fa-globe"></i></div>
-          <div>
-            <h3 class="text-xl font-bold mb-2"> Web Design & Development</h3>
-            <p class="mb-4">Mobile-first, blazing fast, built to impress. From static to dynamic.</p>
-            <ul class="text-gray-600 dark:text-gray-300 space-y-2">
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Responsive Design</li>
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> E-commerce Solutions</li>
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> CMS Integration</li>
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> SEO Optimization</li>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <!-- <i class="fas fa-lightbulb"></i> -->
+                </div>
+                <div class="logo-text">S.<span>S</span> Solutions</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-          </div>
-        </div>
-      </div>
-      
-      <div class="p-8 rounded-xl bg-white dark:bg-gray-900 shadow-md hover:scale-[1.02] transition-transform">
-        <div class="flex items-start">
-          <div class="text-3xl mr-4 text-purple-500"><i class="fas fa-palette"></i></div>
-          <div>
-            <h3 class="text-xl font-bold mb-2"> Graphic Design</h3>
-            <p class="mb-4">Striking visuals. Clear message. We design logos, posters, banners, and full brand kits.</p>
-            <ul class="text-gray-600 dark:text-gray-300 space-y-2">
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Brand Identity</li>
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Print Design</li>
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Social Media Graphics</li>
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Marketing Materials</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <div class="p-8 rounded-xl bg-white dark:bg-gray-900 shadow-md hover:scale-[1.02] transition-transform">
-        <div class="flex items-start">
-          <div class="text-3xl mr-4 text-teal-500"><i class="fas fa-network-wired"></i></div>
-          <div>
-            <h3 class="text-xl font-bold mb-2"> Network Administration</h3>
-            <p class="mb-4">Structured cabling, secure configurations, and optimized routing. LAN/WAN done right.</p>
-            <ul class="text-gray-600 dark:text-gray-300 space-y-2">
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Network Setup</li>
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Security Implementation</li>
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Troubleshooting</li>
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Performance Optimization</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <div class="p-8 rounded-xl bg-white dark:bg-gray-900 shadow-md hover:scale-[1.02] transition-transform">
-        <div class="flex items-start">
-          <div class="text-3xl mr-4 text-amber-500"><i class="fas fa-computer"></i></div>
-          <div>
-            <h3 class="text-xl font-bold mb-2"></i> IT Consultancy</h3>
-            <p class="mb-4">We offer solutions, not just advice. Reliable support for your digital ecosystem.</p>
-            <ul class="text-gray-600 dark:text-gray-300 space-y-2">
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Tech Strategy</li>
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> System Migration</li>
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Cloud Solutions</li>
-              <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Ongoing Support</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
 
-  <!-- Pricing Section -->
-  <section id="pricing" class="py-24 px-6 md:px-20 scroll-mt-16 bg-white dark:bg-gray-900">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl font-semibold mb-4">Pricing</h2>
-      <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">Simple, straightforward pricing for all your digital needs</p>
-    </div>
-    
-    <div class="max-w-5xl mx-auto">
-      <div class="mb-16">
-        <h3 class="text-2xl font-bold mb-8 text-center"> Website Packages</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Basic Website -->
-          <div class="pricing-card p-8 rounded-xl bg-white dark:bg-gray-800 shadow-md">
-            <div class="text-center mb-6">
-              <h4 class="text-xl font-bold mb-2">Basic Website</h4>
-              <div class="text-3xl font-bold text-blue-600">From 18,000 <br> Kshs</div>
-              <p class="text-gray-500 dark:text-gray-400 mt-2">Perfect for startups</p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content fade-in">
+            <h1>We Build <span>Experiences</span> That Work</h1>
+            <p>Web & Graphic Design. Networking. IT Consultancy. Made to move with the future.</p>
+            <p>No business is too small for the web. A modern website builds trust, runs 24/7, and turns visitors into customers.</p>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn">View Our Work</a>
+                <a href="#pricing" class="btn btn-outline">See Pricing</a>
             </div>
-            <ul class="space-y-4 mb-6">
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 5 Custom Pages</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Responsive Design</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Contact Form</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Basic SEO Setup</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Social Media links</span></li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> CMS Integration</span></li>
-            </ul>
-            <a href="#contact" class="block w-full text-center bg-gray-100 dark:bg-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-200 dark:hover:bg-gray-600">Get Started</a>
-          </div>
-          
-          <!-- Business Website -->
-          <div class="pricing-card p-8 rounded-xl bg-white dark:bg-gray-800 shadow-md popular-plan">
-            <div class="popular-badge">Most Popular</div>
-            <div class="text-center mb-6">
-              <h4 class="text-xl font-bold mb-2">Business Website</h4>
-              <div class="text-3xl font-bold text-blue-600">From 25,000 Kshs</div>
-              <p class="text-gray-500 dark:text-gray-400 mt-2">Ideal for growing businesses</p>
-            </div>
-            <ul class="space-y-4 mb-6">
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Up to 10 Pages</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Custom Design</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> SEO Optimization</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Contact Form-linked with Whatsapp</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Social Media Links</li>
-            </ul>
-            <a href="#contact" class="block w-full text-center quote-btn py-3 rounded-lg font-semibold">Get Started</a>
-          </div>
-          
-          <!-- E-commerce Website -->
-          <div class="pricing-card p-8 rounded-xl bg-white dark:bg-gray-800 shadow-md">
-            <div class="text-center mb-6">
-              <h4 class="text-xl font-bold mb-2">E-commerce Website</h4>
-              <div class="text-3xl font-bold text-blue-600">From 60,000 Kshs </div>
-              <p class="text-gray-500 dark:text-gray-400 mt-2">For online stores</p>
-            </div>
-            <ul class="space-y-4 mb-6">
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Up to 50 Products</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Secure Payment Gateway</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Inventory Management</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Customer Accounts</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Product Search & Filter</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Order Tracking</li>
-            </ul>
-            <a href="#contact" class="block w-full text-center bg-gray-100 dark:bg-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-200 dark:hover:bg-gray-600">Get Started</a>
-          </div>
-
-               <!-- Custom Web Application Website -->
-          <div class="w-full flex justify-center mt-6"></div>
-          <div class="pricing-card p-8 rounded-xl bg-white dark:bg-gray-800 shadow-md">
-            <div class="text-center mb-6">
-              <h4 class="text-xl font-bold mb-2">Custom Web Applications</h4>
-              <div class="text-3xl font-bold text-blue-600">From 80,000 Kshs </div>
-              <p class="text-gray-500 dark:text-gray-400 mt-2">For unique business systems or tools</p>
-            </div>
-            <ul class="space-y-4 mb-6">
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Tailored Features & Workflows</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Admin Dashboard</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Inventory Management</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> User Authentication & Roles</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Custom Forms & Reports</li>
-              <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> API Integration (e.g., M-Pesa)</li>
-            </ul>
-            <a href="#contact" class="block w-full text-center bg-gray-100 dark:bg-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-200 dark:hover:bg-gray-600">Get Started</a>
-          </div>
-          </div>
         </div>
-      </div>
-      
-      <div>
-        <h3 class="text-2xl font-bold mb-8 text-center"> Graphic Design Packages</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-           <!-- Logo Design -->
-      <div class="service-card relative p-8">
-        <div class="absolute top-0 left-0 w-full h-2 bg-purple-500"></div>
-        <div class="service-icon bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400">
-          <i class="fas fa-pen-nib text-3xl"></i>
-        </div>
-        <h3 class="text-2xl font-bold mb-4">Logo Design</h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-6">
-          Professional logo creation that captures your brand essence and makes a memorable first impression.
-        </p>
-        <h4 class="font-bold text-lg mb-3">What's Included:</h4>
-        <ul class="feature-list mb-8">
-          <li>3 unique logo concepts</li>
-          <li>2 rounds of revisions</li>
-          <li>Final files in multiple formats (PNG, SVG)</li>
-          <li>Color variations</li>
-          <li>Transparent background versions</li>
-        </ul>
-        <div class="mt-auto">
-          <a href="#contact" class="quote-btn w-full block text-center py-3 rounded-lg font-semibold text-white">
-            <i class="fab fa-whatsapp mr-2"></i> Get Quote
-          </a>
-        </div>
-      </div>
-      
-      <!-- Brand Identity -->
-      <div class="service-card relative p-8">
-        <!-- <div class="popular-badge">Most Popular</div> -->
-        <div class="absolute top-0 left-0 w-full h-2 bg-indigo-500"></div>
-        <div class="service-icon bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400">
-          <i class="fas fa-palette text-3xl"></i>
-        </div>
-        <h3 class="text-2xl font-bold mb-4">Brand Identity</h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-6">
-          Complete visual identity package that establishes a cohesive and professional brand presence.
-        </p>
-        <h4 class="font-bold text-lg mb-3">What's Included:</h4>
-        <ul class="feature-list mb-8">
-          <li>Logo design with 3 concepts</li>
-          <li>Business card design</li>
-          <li>Letterhead & envelope templates</li>
-          <li>Brand style guide</li>
-          <li>Social media branding kit</li>
-          <li>Unlimited revisions</li>
-        </ul>
-        <div class="mt-auto">
-          <a href="#contact" class="quote-btn w-full block text-center py-3 rounded-lg font-semibold text-white">
-            <i class="fab fa-whatsapp mr-2"></i> Get Quote
-          </a>
-        </div>
-      </div>
-      
-      <!-- Marketing Materials -->
-      <div class="service-card relative p-8">
-        <div class="absolute top-0 left-0 w-full h-2 bg-pink-500"></div>
-        <div class="service-icon bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400">
-          <i class="fas fa-bullhorn text-3xl"></i>
-        </div>
-        <h3 class="text-2xl font-bold mb-4">Marketing Package</h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-6">
-          Comprehensive marketing collateral to promote your business across multiple channels.
-        </p>
-        <h4 class="font-bold text-lg mb-3">What's Included:</h4>
-        <ul class="feature-list mb-8">
-          <li>Brand identity package</li>
-          <li>8-page brochure design</li>
-          <li>3 flyer design variations</li>
-          <li>2 banner sizes</li>
-          <li>Social media templates</li>
-          <li>Social media management strategy</li>
-        </ul>
-        <div class="mt-auto">
-          <a href="#contact" class="quote-btn w-full block text-center py-3 rounded-lg font-semibold text-white">
-            <i class="fab fa-whatsapp mr-2"></i> Get Quote
-          </a>
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Networking & IT Services -->
-    <div class="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 p-8 rounded-2xl mb-20">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold mb-4">Networking & IT Solutions</h2>
-        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Custom infrastructure solutions to keep your business connected and secure
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Networking Services -->
-        <div class="bg-white dark:bg-gray-800/50 p-8 rounded-xl">
-          <div class="flex items-center mb-6">
-            <div class="network-icon text-indigo-600 dark:text-indigo-400 mr-4">
-              <i class="fas fa-network-wired text-2xl"></i>
+    <!-- Services Section -->
+    <section class="section services parallax" id="services">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Comprehensive digital solutions tailored to your business needs</p>
             </div>
-            <h3 class="text-2xl font-bold">Networking Services</h3>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="flex justify-between items-center pb-4 border-b border-gray-200 dark:border-gray-700">
-              <div>
-                <h4 class="font-semibold">Small Office Network Setup</h4>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Ideal for businesses with 1-10 employees</p>
-              </div>
-              <span class="bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">Quote Based</span>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Design & Development</h3>
+                    <p>Mobile-first, blazing fast websites built to impress. From static to dynamic solutions with responsive design and SEO optimization.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Striking visuals and clear messaging for logos, posters, banners, and full brand kits that make your business stand out.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Administration</h3>
+                    <p>Structured cabling, secure configurations, and optimized routing for businesses of all sizes with ongoing support.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>IT Consultancy</h3>
+                    <p>Strategic technology planning, system migration, and cloud solutions tailored to your business goals and challenges.</p>
+                </div>
             </div>
-            
-            <div class="flex justify-between items-center pb-4 border-b border-gray-200 dark:border-gray-700">
-              <div>
-                <h4 class="font-semibold">Business Network Setup</h4>
-                <p class="text-sm text-gray-500 dark:text-gray-400">For organizations with 10-50 employees</p>
-              </div>
-              <span class="bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">Quote Based</span>
-            </div>
-            
-            <div class="flex justify-between items-center pb-4 border-b border-gray-200 dark:border-gray-700">
-              <div>
-                <h4 class="font-semibold">Network Security Audit</h4>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Comprehensive security assessment</p>
-              </div>
-              <span class="bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">Quote Based</span>
-            </div>
-            
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="font-semibold">Network Troubleshooting</h4>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Expert diagnosis and resolution</p>
-              </div>
-              <span class="bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">Hourly Rate</span>
-            </div>
-          </div>
         </div>
-        
-        <!-- IT Consultancy -->
-        <div class="bg-white dark:bg-gray-800/50 p-8 rounded-xl">
-          <div class="flex items-center mb-6">
-            <div class="network-icon text-purple-600 dark:text-purple-400 mr-4">
-              <i class="fas fa-computer text-2xl"></i>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing parallax" id="pricing">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="section-title">
+                <h2>Simple & Transparent Pricing</h2>
+                <p>Straightforward packages for all your digital needs</p>
             </div>
-            <h3 class="text-2xl font-bold">IT Consultancy</h3>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="flex justify-between items-center pb-4 border-b border-gray-200 dark:border-gray-700">
-              <div>
-                <h4 class="font-semibold">IT Strategy Session</h4>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Technology roadmap development</p>
-              </div>
-              <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-400 px-3 py-1 rounded-full text-sm font-medium">Quote Based</span>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <h3>Basic Website</h3>
+                    <div class="price"><span>From</span>18,000 <span>Kshs</span></div>
+                    <p>Perfect for startups and small businesses</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 5 Custom Pages</li>
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Contact Form</li>
+                        <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+                        <li><i class="fas fa-check"></i> CMS Integration</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+                <div class="pricing-card popular fade-in">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Business Website</h3>
+                    <div class="price"> <span>From</span>25,000 <span>Kshs</span></div>
+                    <p>Ideal for growing businesses</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Up to 10 Pages</li>
+                        <li><i class="fas fa-check"></i> Custom Design</li>
+                        <li><i class="fas fa-check"></i> SEO Optimization</li>
+                        <li><i class="fas fa-check"></i> Contact Form with WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Google Maps Integration</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+                <div class="pricing-card fade-in">
+                    <h3>E-commerce Website</h3>
+                    <div class="price"> <span> From</span> 60,000 <span>Kshs</span></div>
+                    <p>For online stores and product sales</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Up to 50 Products</li>
+                        <li><i class="fas fa-check"></i> Secure Payment Gateway</li>
+                        <li><i class="fas fa-check"></i> Inventory Management</li>
+                        <li><i class="fas fa-check"></i> Customer Accounts</li>
+                        <li><i class="fas fa-check"></i> Order Tracking</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
+                  <div class="pricing-card fade-in">
+                    <h3>Custom Web Appliations</h3>
+                    <div class="price"> <span> From</span>80,000 <span>Kshs</span></div>
+                    <p>For unique business systems or tools</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Tailored Features & Workflows</li>
+                        <li><i class="fas fa-check"></i> Admin Dashboard</li>
+                        <li><i class="fas fa-check"></i> Inventory Management</li>
+                        <li><i class="fas fa-check"></i> User Authentication & Role</li>
+                        <li><i class="fas fa-check"></i> Api Integration</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </div>
             </div>
-            
-            <div class="flex justify-between items-center pb-4 border-b border-gray-200 dark:border-gray-700">
-              <div>
-                <h4 class="font-semibold">System Migration</h4>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Seamless transition to new systems</p>
-              </div>
-              <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-400 px-3 py-1 rounded-full text-sm font-medium">Project Based</span>
-            </div>
-            
-            <div class="flex justify-between items-center pb-4 border-b border-gray-200 dark:border-gray-700">
-              <div>
-                <h4 class="font-semibold">Cloud Setup & Migration</h4>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Secure cloud infrastructure</p>
-              </div>
-              <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-400 px-3 py-1 rounded-full text-sm font-medium">Project Based</span>
-            </div>
-            
-            <div class="flex justify-between items-center">
-              <div>
-                <h4 class="font-semibold">Monthly Support Package</h4>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Ongoing IT maintenance</p>
-              </div>
-              <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-400 px-3 py-1 rounded-full text-sm font-medium">Monthly</span>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- WhatsApp Quote Section -->
-    <div id="contact" class="gradient-section text-white p-8 md:p-12 rounded-2xl">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div>
-          <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-          <p class="text-indigo-100 mb-6 max-w-md">
-            Request a personalized quote via WhatsApp. We'll respond within 24 hours with a detailed proposal tailored to your needs.
-          </p>
-          <div class="flex items-center mb-6">
-            <div class="bg-white/20 p-3 rounded-xl mr-4">
-              <i class="fab fa-whatsapp text-3xl"></i>
+    <!-- Portfolio Section -->
+    <section class="section portfolio parallax" id="portfolio">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="section-title">
+                <h2>Our Featured Projects</h2>
+                <p>Explore our latest work and client success stories</p>
             </div>
-            <div>
-              <h3 class="font-bold text-xl">Direct WhatsApp Quote</h3>
-              <p>Get immediate assistance</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-card fade-in">
+                    <img src="assets/pasi dental.png" alt="Pasi Dental" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Pasi Dental Clinic</h3>
+                        <p>Professional website with appointment booking and service showcase.</p>
+                        <a href="https://pasidentalcare.co.ke" target="_blank" class="portfolio-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-card fade-in">
+                    <img src="assets/geotronics.PNG" alt="Geotronics Engineering" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Geotronics Engineering</h3>
+                        <p>Corporate site for borehole drilling company with service showcase.</p>
+                        <a href="https://geotronics.co.ke/" target="_blank" class="portfolio-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-card fade-in">
+                    <img src="assets/booking.png" alt="QuickDrive & Fix" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>QuickDrive & Fix</h3>
+                        <p>Car hire and garage service website with booking functionality.</p>
+                        <a href="https://ssayi91.github.io/Swift-Drive-Auto-care/" target="_blank" class="portfolio-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-center">
-              <i class="fas fa-check-circle mr-3 text-green-300"></i>
-              <span>Personalized service consultation</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-check-circle mr-3 text-green-300"></i>
-              <span>No obligation quote</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-check-circle mr-3 text-green-300"></i>
-              <span>Quick response time</span>
-            </li>
-          </ul>
         </div>
-        
-       <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
-  <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-6 text-center">Request Quote</h3>
-  <form id="quoteForm" class="space-y-4">
-    <div>
-      <label class="block text-gray-700 dark:text-gray-300 mb-2">Your Name</label>
-      <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-    </div>
+    </section>
 
-    <div>
-      <label class="block text-gray-700 dark:text-gray-300 mb-2">Email Address (optional)</label>
-      <input type="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-    </div>
-
-    <div>
-      <label class="block text-gray-700 dark:text-gray-300 mb-2">Service Interest</label>
-      <select name="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-        <option value="">Select a service</option>
-        <option>Logo Design</option>
-        <option>Brand Identity</option>
-        <option>Marketing Package</option>
-        <option>Networking Services</option>
-        <option>IT Consultancy</option>
-      </select>
-    </div>
-
-    <button type="submit" class="quote-btn w-full py-3 rounded-lg font-semibold text-white bg-green-600 hover:bg-green-700 transition">
-      <i class="fab fa-whatsapp mr-2"></i> Request Quote via WhatsApp
-    </button>
-  </form>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-  <!-- Portfolio Section -->
-  <section id="projects" class="py-16 bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-bold mb-10 text-center">Featured Projects</h2>
-
-    <!-- Web Projects -->
-  <!-- Web Projects -->
-<div class="mb-16">
-  <h3 class="text-2xl font-semibold mb-6 text-center">Web Projects</h3>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    
-    <!-- Project 1: SmileCare Dental -->
-    <div class="portfolio-item rounded-xl overflow-hidden shadow-md bg-white dark:bg-gray-900">
-          <a href="https://pasidentalcare.co.ke/" target="_blank">
-    <img src="assets/pasi dental.png" alt="SmileCare Dental website screenshot" class="w-full h-55 object-cover">
-  </a>
-      <!-- <div class="bg-gradient-to-r from-teal-500 to-green-400 h-48"></div> -->
-      <div class="p-6">
-        <h4 class="text-xl font-bold mb-2">Pasi Dental</h4>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">A clean, professional website for a Nairobi-based dental clinic featuring services, about and WhatsApp appointment booking.</p>
-        <div class="flex justify-between items-center">
-          <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm"> <a href="https://pasidentalcare.co.ke/" target="_blank"> Click to View </a></span>
-          <span class="text-sm text-gray-500 dark:text-gray-400"></span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 2: BrightSmile Dental -->
-    <div class="portfolio-item rounded-xl overflow-hidden shadow-md bg-white dark:bg-gray-900">
-              <a href="http://madarakadentalcentre.co.ke/" target="_blank">
-    <img src="assets/Madaraka Dental.png" alt="SmileCare Dental website screenshot" class="w-full h-55 object-cover">
-  </a>
-      <!-- <div class="bg-gradient-to-r from-blue-500 to-indigo-400 h-48"></div> -->
-      <div class="p-6">
-        <h4 class="text-xl font-bold mb-2">Madaraka Dental</h4>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">Custom website for madaraka dental centre, optimized for mobile with Google Maps, WhatsApp, and full service listing .</p>
-        <div class="flex justify-between items-center">
-          <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"> <a href="http://madarakadentalcentre.co.ke/" target="_blank"> Click to View </a> </span>
-          <span class="text-sm text-gray-500 dark:text-gray-400"></span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 3: AquaBore Drilling Co. -->
-    <div class="portfolio-item rounded-xl overflow-hidden shadow-md bg-white dark:bg-gray-900">
-              <a href="https://geotronics.co.ke" target="_blank">
-    <img src="assets/geotronics.PNG" alt="SmileCare Dental website screenshot" class="w-full h-55 object-cover">
-  </a>
-      <!-- <div class="bg-gradient-to-r from-yellow-400 to-orange-500 h-48"></div> -->
-      <div class="p-6">
-        <h4 class="text-xl font-bold mb-2">Geotronics Engineering</h4>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">Informative site for a borehole drilling company including service breakdown, photo gallery, and inquiry form for quotations.</p>
-        <div class="flex justify-between items-center">
-          <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm"  > <a href="https://geotronics.co.ke" target="_blank"> Click to View </a> </span>
-          <span class="text-sm text-gray-500 dark:text-gray-400"></span>
-        </div>
-      </div>
-    </div>
-    <!-- garage/booking app -->
-       <div class="portfolio-item rounded-xl overflow-hidden shadow-md bg-white dark:bg-gray-900">
-              <a href="https://ssayi91.github.io/Swift-Drive-Auto-care/" target="_blank">
-    <img src="assets/booking.png" alt="SmileCare Dental website screenshot" class="w-full h-55 object-cover">
-  </a>
-      <!-- <div class="bg-gradient-to-r from-blue-500 to-indigo-400 h-48"></div> -->
-      <div class="p-6">
-        <h4 class="text-xl font-bold mb-2">QuickDrive & Fix</h4>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">Custom website for a garage/car hire service.</p>
-        <div class="flex justify-between items-center">
-          <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"> <a href="https://ssayi91.github.io/Swift-Drive-Auto-care/" target="_blank"> Click to View </a> </span>
-          <span class="text-sm text-gray-500 dark:text-gray-400"></span>
-        </div>
-      </div>
-    </div>
-    <!-- salon booking -->
-            <div class="portfolio-item rounded-xl overflow-hidden shadow-md bg-white dark:bg-gray-900">
-              <a href="https://ssayi91.github.io/Salon-booking-/" target="_blank">
-    <img src="assets/saloon.png" alt="SmileCare Dental website screenshot" class="w-full h-55 object-cover">
-  </a>
-      <!-- <div class="bg-gradient-to-r from-blue-500 to-indigo-400 h-48"></div> -->
-      <div class="p-6">
-        <h4 class="text-xl font-bold mb-2">Salon</h4>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">Modern fresh look of a salon with features and intergrated with whatsap 
-          for communication..</p>
-        <div class="flex justify-between items-center">
-          <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"> <a href="https://ssayi91.github.io/Salon-booking-/" target="_blank"> Click to View </a> </span>
-          <span class="text-sm text-gray-500 dark:text-gray-400"></span>
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio-item rounded-xl overflow-hidden shadow-md bg-white dark:bg-gray-900">
-      <a href="https://ssayi91.github.io/Gift-Center/" target="_blank">
-    <img src="assets/gift center.PNG" alt="gift centre" class="w-full h-55 object-cover">
-  </a>
-      <!-- <div class="bg-gradient-to-r from-blue-500 to-indigo-400 h-48"></div> -->
-      <div class="p-6">
-        <h4 class="text-xl font-bold mb-2">Gift Shop</h4>
-        <p class="text-gray-600 dark:text-gray-300 mb-4"> Custom made product site, online gift shop, with features to help in communication, order placing and more..</p>
-        <div class="flex justify-between items-center">
-          <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"> <a href="https://ssayi91.github.io/Salon-booking-/" target="_blank"> Click to View </a> </span>
-          <span class="text-sm text-gray-500 dark:text-gray-400"></span>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-</div>
-
-
-    <!-- Graphic Design Projects -->
-    <div>
-      <h3 class="text-2xl font-semibold mb-6 text-center">Graphic Design Projects</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Design Project 1 -->
-        <div class="portfolio-item rounded-xl overflow-hidden shadow-md bg-white dark:bg-gray-900">
-          <div class="h-80 overflow-hidden">
-            <img src="assets/2.png" alt="Sonny Solutions" class="w-full h-full object-cover">
-          </div>
-          <div class="p-6">
-            <h4 class="text-xl font-bold mb-2">Sonny Solutions</h4>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">Complete branding package including logo, banner designs.</p>
-            <div class="flex justify-between items-center">
-              <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 rounded-full text-sm">Logo</span>
-              <span class="text-sm text-gray-500 dark:text-gray-400">Request Design</span>
+    <!-- FAQ Section -->
+    <section class="section faq parallax" id="faq">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our services</p>
             </div>
-          </div>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>How long does it take to design and launch a website?</h3>
+                        <div class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The timeline varies based on complexity. A basic website typically takes 2-3 weeks, while e-commerce sites may take 4-6 weeks. We work efficiently to deliver quality results while respecting your timeline.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Can you help fix an existing website or upgrade it?</h3>
+                        <div class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We specialize in website renovations, upgrades, and troubleshooting. We can enhance functionality, improve design, optimize performance, or fix any technical issues your current site may have.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Do you provide hosting and domain registration?</h3>
+                        <div class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer comprehensive hosting solutions tailored to your website's needs. We can register domains on your behalf or transfer existing domains. Our hosting packages include security, backups, and technical support.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>What networking solutions do you offer for offices?</h3>
+                        <div class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide end-to-end networking solutions including structured cabling, wireless access points, network security, VPN setup, server configuration, and ongoing maintenance. We design networks that scale with your business.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Design Project 2 -->
-        <div class="portfolio-item rounded-xl overflow-hidden shadow-md bg-white dark:bg-gray-900">
-          <div class="h-80 overflow-hidden">
-            <img src="assets/Untitled design.png" alt="Geotronics" class="w-full h-full object-cover">
-          </div>
-          <div class="p-6">
-            <h4 class="text-xl font-bold mb-2">Geotronics</h4>
-            <p class="text-gray-600 dark:text-gray-300 mb-4"> Design is related to their brand of borehole and drilling services .</p>
-            <div class="flex justify-between items-center">
-              <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">Logo</span>
-              <span class="text-sm text-gray-500 dark:text-gray-400">Request Design</span>
+    <!-- Contact Section -->
+    <section class="section contact parallax" id="contact">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind? Contact us today for a consultation</p>
             </div>
-          </div>
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+254 736 194051</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>sonny.sayi@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon-Fri: 8AM - 5PM</p>
+                                <p>Sat: 8AM - 4PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form fade-in">
+                    <h3>Request a Quote</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service">
+                                <option value="">Select a service</option>
+                                <option>Web Design & Development</option>
+                                <option>Graphic Design</option>
+                                <option>Network Administration</option>
+                                <option>IT Consultancy</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" placeholder="Tell us about your project" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Request</button>
+                    </form>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Design Project 3 -->
-        <div class="portfolio-item rounded-xl overflow-hidden shadow-md bg-white dark:bg-gray-900">
-          <div class="h-80 overflow-hidden">
-            <img src="assets/Fusion Flavor.png" alt="Spice dealer" class="w-full h-full object-cover">
-          </div>
-          <div class="p-6">
-            <h4 class="text-xl font-bold mb-2">Fusion Flavor</h4>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">Design is related to their brand of services in supply of spices.</p>
-            <div class="flex justify-between items-center">
-              <span class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200 rounded-full text-sm">Logo</span>
-              <span class="text-sm text-gray-500 dark:text-gray-400">Request Design</span>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sonny Sayi Solutions</h3>
+                <p>Crafting digital experiences that drive results and exceed expectations.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
-          </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Web Design & Development</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Network Administration</a></li>
+                    <li><a href="#">IT Consultancy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    <li><i class="fab fa-whatsapp"></i> +254 736 194051</li>
+                    <li><i class="fas fa-envelope"></i> sonny.sayi@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 8AM-5PM</li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQs -->
-
-<section class="max-w-4xl mx-auto px-4 py-10">
-  <h2 class="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-white">Frequently Asked Questions</h2>
-  
-  <div class="space-y-4">
-    <!-- FAQ Item -->
-    <div class="border border-gray-300 rounded-lg overflow-hidden dark:border-gray-700">
-      <button class="w-full px-6 py-4 text-left bg-gray-100 dark:bg-gray-800 dark:text-white flex justify-between items-center focus:outline-none faq-toggle">
-        <span class="font-semibold">What networking services do you offer?</span>
-        <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      <div class="px-6 py-4 text-gray-700 dark:text-gray-300 hidden faq-content">
-        We design, implement, and manage structured cabling, network administration, and network infrastructure setup for small to medium businesses ensuring secure, reliable connectivity.
-      </div>
-    </div>
-
-    <div class="border border-gray-300 rounded-lg overflow-hidden dark:border-gray-700">
-      <button class="w-full px-6 py-4 text-left bg-gray-100 dark:bg-gray-800 dark:text-white flex justify-between items-center focus:outline-none faq-toggle">
-        <span class="font-semibold">What web design and development services do you provide?</span>
-        <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      <div class="px-6 py-4 text-gray-700 dark:text-gray-300 hidden faq-content">
-          <ul class="list-disc list-inside space-y-2">
-    <li><strong>Custom Website Design:</strong> Unique, visually appealing designs tailored to your brand.</li>
-    <li><strong>Responsive Design:</strong> Mobile-friendly websites that work seamlessly across all devices.</li>
-    <li><strong>Front-end Development:</strong> Clean, fast-loading, and interactive user interfaces using HTML, CSS, JavaScript, and modern frameworks.</li>
-    <li><strong>Backend Development:</strong> Secure and scalable server-side functionality using technologies like Node.js,.</li>
-    <li><strong>Content Management Systems (CMS):</strong> WordPress and custom CMS integration for easy content updates.</li>
-    <li><strong>E-commerce Development:</strong> Online stores with payment integration, inventory management, and customer accounts.</li>
-    <li><strong>Booking Systems:</strong> Custom solutions for appointments, rentals, and reservations.</li>
-    <li><strong>Website Maintenance:</strong> Ongoing updates, backups, and security management.</li>
-    <li><strong>SEO Optimization:</strong> Best practices to help your site rank well on search engines.</li>
-    <li><strong>Website Redesigns:</strong> Modernizing old or underperforming sites with fresh design and updated tech.</li>
-  </ul>
-      </div>
-    </div>
-
-    <div class="border border-gray-300 rounded-lg overflow-hidden dark:border-gray-700">
-      <button class="w-full px-6 py-4 text-left bg-gray-100 dark:bg-gray-800 dark:text-white flex justify-between items-center focus:outline-none faq-toggle">
-        <span class="font-semibold">Do you offer graphic design and branding services?</span>
-        <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      <div class="px-6 py-4 text-gray-700 dark:text-gray-300 hidden faq-content">
-        Yes! We create logos, branding materials, social media graphics, and promotional designs that help your business stand out and communicate your unique identity.
-      </div>
-    </div>
-
-    <div class="border border-gray-300 rounded-lg overflow-hidden dark:border-gray-700">
-      <button class="w-full px-6 py-4 text-left bg-gray-100 dark:bg-gray-800 dark:text-white flex justify-between items-center focus:outline-none faq-toggle">
-        <span class="font-semibold">What IT support services are available?</span>
-        <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      <div class="px-6 py-4 text-gray-700 dark:text-gray-300 hidden faq-content">
-        We provide general IT support including troubleshooting, system administration, software setup, virus removal, backups, and IT consultancy to keep your operations running smoothly.
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-24 px-6 md:px-20 scroll-mt-16">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-semibold mb-4">📩 Get In Touch</h2>
-        <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">Questions, projects, or partnerships? Start a conversation today.</p>
-      </div>
-      
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div>
-          <h3 class="text-xl font-bold mb-6">Get a Free Quote</h3>
-  <form id="quoteForms" class="space-y-6">
-  <div>
-    <label for="name" class="block mb-2 font-medium">Your Name</label>
-    <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
-  </div>
-  
-  <div>
-    <label for="email" class="block mb-2 font-medium">Email Address</label>
-    <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
-  </div>
-  
-  <div>
-    <label for="service" class="block mb-2 font-medium">Service Interest</label>
-    <select id="service" name="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
-      <option value="">Select a service</option>
-      <option value="Web Design & Development">Web Design & Development</option>
-      <option value="Graphic Design">Graphic Design</option>
-      <option value="Networking">Networking</option>
-      <option value="IT Consultancy">IT Consultancy</option>
-      <option value="Multiple Services">Multiple Services</option>
-    </select>
-  </div>
-  
-  <div>
-    <label for="message" class="block mb-2 font-medium">Project Details</label>
-    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-  </div>
-  
-  <button type="submit" class="quote-btn w-full px-6 py-3 rounded-lg font-bold">Request Quote</button>
-</form>
-
+        <div class="copyright">
+            <p>&copy; 2025 Sonny Sayi Solutions</p>
         </div>
-        
-        <div>
-          <h3 class="text-xl font-bold mb-6">Contact Information</h3>
-          <div class="space-y-6">
-            <div class="flex items-start">
-              <div class="text-2xl mr-4 text-blue-500"><i class="fas fa-map-marker-alt"></i></div>
-              <div>
-                <h4 class="font-bold mb-1">Location</h4>
-                <p class="text-gray-600 dark:text-gray-300">Nairobi, Kenya</p>
-              </div>
-            </div>
-            
-            <div class="flex items-start">
-              <div class="text-2xl mr-4 text-green-500"><i class="fab fa-whatsapp"></i></div>
-              <div>
-                <h4 class="font-bold mb-1">WhatsApp</h4>
-                <a href="https://wa.me/254736194051" class="text-gray-600 dark:text-gray-300 hover:text-green-500">+254 736 194051</a>
-              </div>
-            </div>
-            
-            <div class="flex items-start">
-              <div class="text-2xl mr-4 text-purple-500"><i class="fas fa-envelope"></i></div>
-              <div>
-                <h4 class="font-bold mb-1">Email</h4>
-                <a href="mailto:sonny.sayi@gmai.com" class="text-gray-600 dark:text-gray-300 hover:text-purple-500">sonny.sayi@gmail.com</a>
-              </div>
-            </div>
-            
-            <div class="flex items-start">
-              <div class="text-2xl mr-4 text-amber-500"><i class="fas fa-clock"></i></div>
-              <div>
-                <h4 class="font-bold mb-1">Working Hours</h4>
-                <p class="text-gray-600 dark:text-gray-300">Mon-Fri: 8AM - 5PM</p>
-                <p class="text-gray-600 dark:text-gray-300">Sat: 8AM - 4PM</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="mt-12">
-            <h4 class="font-bold mb-4">Follow Us</h4>
-            <div class="flex space-x-4">
-              <a href="https://github.com/Ssayi91" target="_blank" class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-500 hover:text-white transition-colors">
-                <i class="fab fa-github text-xl"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/sonny-sayi-160835a7/" target="_blank" class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-700 hover:text-white transition-colors">
-                <i class="fab fa-linkedin-in text-xl"></i>
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=61577290837456" target="_blank" class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-pink-500 hover:text-white transition-colors">
-                <i class="fab fa-facebook text-xl"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-12 text-center bg-gray-900 dark:bg-gray-950 text-gray-400">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <div class="text-3xl font-bold mb-4">S.S Solutions</div>
-        <p class="mb-6 max-w-xl mx-auto">Crafting digital experiences that drive results and exceed expectations.</p>
-        
-        <div class="flex justify-center space-x-8 mb-8">
-          <a href="#home" class="hover:text-white">Home</a>
-          <a href="#services" class="hover:text-white">Services</a>
-          <a href="#pricing" class="hover:text-white">Pricing</a>
-          <a href="#portfolio" class="hover:text-white">Portfolio</a>
-          <a href="#contact" class="hover:text-white">Contact</a>
-        </div>
-        
-        <p class="mb-4">© 2025 S.S Solutions · Built for the future · Made in Kenya</p>
-        <p>
-          <a href="https://github.com/Ssayi91" target="_blank" class="hover:text-[#4f46e5]  underline mr-4">GitHub</a>
-          <a href="mailto:sonny.sayi@gmail.com" class="hover:text-[#4f46e5] underline mr-4">Email</a>
-          <a href="https://www.linkedin.com/in/sonny-sayi-160835a7/" target="_blank" class="hover:text-[#4f46e5]  underline">LinkedIn</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-<script src="./script.js"></script>
+    </footer>
+<script src="script.js"></script>   
 </body>
 </html>
