@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
         * {
             margin: 0;
@@ -27,7 +28,7 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             background: linear-gradient(135deg, #f8f9fa 0%, #eef2f6 100%);
             color: var(--text);
             line-height: 1.6;
@@ -124,8 +125,8 @@
         .nav-links a {
             color: var(--text);
             text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
+            font-weight: 600;
+            font-size: 18px;
             position: relative;
             transition: var(--transition);
         }
@@ -147,6 +148,10 @@
 
         .nav-links a:hover:after {
             width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--primary);
         }
 
         .mobile-menu-btn {

@@ -181,7 +181,7 @@
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 1.5rem;
-            color: var(--dark);
+            color: var(--light-gray);
         }
 
         .hero h1 span {
@@ -192,7 +192,7 @@
             font-size: 18px;
             font-weight: 600;
             margin-bottom: 2rem;
-            color: #122620;
+            color: var(--light-gray);
             max-width: 500px;
         }
 
