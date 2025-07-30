@@ -98,36 +98,43 @@
                 return;
             }
             
-            // Format WhatsApp message
+           // Format WhatsApp message
             const serviceNames = {
-                'web': 'Website Design & Development',
-                'logo': 'Logo & Branding',
-                'network': 'Network Infrastructure',
-                'consulting': 'IT Consulting',
-                'other': 'Other Service'
+            'web': 'Website Design & Development',
+            'logo': 'Logo & Branding',
+            'network': 'Network Infrastructure',
+            'consulting': 'IT Consulting',
+            'other': 'Other Service'
             };
-            
-            let whatsappMessage = `Hi Sonny Sayi Solutions!%0A%0A`;
-            whatsappMessage += `*Name:* ${name}%0A`;
-            whatsappMessage += `*Email:* ${email}%0A`;
-            whatsappMessage += `*Phone:* ${phone}%0A`;
-            whatsappMessage += `*Service:* ${serviceNames[service]}%0A`;
-            whatsappMessage += `*Installment Plan:* ${installment ? 'Yes' : 'No'}%0A%0A`;
-            whatsappMessage += `*Project Details:*%0A${encodeURIComponent(message)}%0A%0A`;
-            whatsappMessage += `I'm interested in discussing this project further.`;
-            
+
+            let whatsappMessage = `
+            Hi Sonny Sayi Solutions!\n\n
+            *Name:* ${name}\n
+            *Email:* ${email}\n
+            *Phone:* ${phone}\n
+            *Service:* ${serviceNames[service]}\n
+            *Installment Plan:* ${installment ? 'Yes' : 'No'}\n\n
+            *Project Details:*\n${message}\n\n
+            I'm interested in discussing this project further.
+            `;
+
+            // Encode entire message
+            let encodedMessage = encodeURIComponent(whatsappMessage);
+
             // Create WhatsApp URL
-            const whatsappUrl = `https://wa.me/254736194051?text=${whatsappMessage}`;
-            
+            const whatsappUrl = `https://wa.me/254736194051?text=${encodedMessage}`;
+
             // Open WhatsApp in new tab
             window.open(whatsappUrl, '_blank');
-            
+
             // Show success message
             showFeedback('Your message has been sent successfully! We will contact you shortly.', 'success');
-            
+
             // Reset form
             contactForm.reset();
-        });
+            showFeedback('Your message has been sent successfully! We will contact you shortly.', 'success');
+            contactForm.reset();    
+            });
         
         function showFeedback(message, type) {
             feedbackElement.textContent = message;
