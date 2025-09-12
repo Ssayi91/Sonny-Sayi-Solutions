@@ -16,6 +16,7 @@
             --light-gray: #f5f7fa;
             --text: #37474f;
             --text-light: #607d8b;
+            --span: #ffeb3b;
             --border: #e0e0e0;
             --shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             --transition: all 0.4s ease;
@@ -186,7 +187,8 @@
         }
 
         .hero h1 span {
-            color: var(--primary);
+            color: var(--span);
+            font-weight: 800;
         }
 
         .hero p {
@@ -215,18 +217,21 @@
             background: var(--primary-light);
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(30, 136, 229, 0.2);
+            color: var(--span);
+            border: 2px solid var(--light);
         }
 
         .btn-outline {
             background: transparent;
-            border: 2px solid var(--accent);
-            color: var(--accent);
+            border: 2px solid var(--span);
+            color: var(--span);
             margin-left: 15px;
         }
 
         .btn-outline:hover {
-            background: var(--accent);
-            color: white;
+            /* background: var(--span); */
+            color: var(--span);
+            border: 2px solid var(--light);
         }
 
         /* Section Styling */

@@ -15,6 +15,7 @@
             --light-gray: #f5f7fa;
             --text: #37474f;
             --text-light: #607d8b;
+            --span: #ffeb3b;
             --border: #e0e0e0;
             --shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             --transition: all 0.4s ease;
@@ -185,7 +186,8 @@
         }
 
         .hero h1 span {
-            color: var(--primary);
+            color: var(--span);
+            font-weight: 800;
         }
 
         .hero p {
@@ -225,8 +227,10 @@
         }
 
         .btn-outline:hover {
-            background: white;
-            color: var(--primary);
+            background: var(--accent);
+            color: var(--span);
+            border: 2px solid var(--light);
+            font-weight: 800;
         }
 
         /* Section Styling */
@@ -432,7 +436,7 @@
         }
 
         .education-card h3 i {
-            color: var(--accent);
+            color: var(--span);
         }
 
         .education-card p {
@@ -455,7 +459,7 @@
             content: '✓';
             position: absolute;
             left: 0;
-            color: var(--accent);
+            color: var(--span);
             font-weight: bold;
         }
 
