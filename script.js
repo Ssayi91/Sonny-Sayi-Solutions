@@ -73,3 +73,21 @@
         fadeElements.forEach(el => {
             observer.observe(el);
         });
+
+document.querySelectorAll('.view-more-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const card = this.closest('.pricing-card');
+        const extra = card.querySelector('.extra-features');
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+        if (isExpanded) {
+            extra.style.display = 'none';
+            this.setAttribute('aria-expanded', 'false');
+            this.querySelector('span').textContent = 'View More Features';
+        } else {
+            extra.style.display = 'block';
+            this.setAttribute('aria-expanded', 'true');
+            this.querySelector('span').textContent = 'View Less';
+        }
+    });
+});
