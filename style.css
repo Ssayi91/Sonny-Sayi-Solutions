@@ -20,6 +20,7 @@
             --border: #e0e0e0;
             --shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             --transition: all 0.4s ease;
+            --main-color: #122620;
         }
 
         body {
@@ -187,7 +188,7 @@
         }
 
         .hero h1 span {
-            color: var(--span);
+            color: #122620;
             font-weight: 800;
         }
 
@@ -336,7 +337,7 @@
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
