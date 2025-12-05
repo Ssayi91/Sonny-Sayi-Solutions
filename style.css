@@ -449,6 +449,35 @@
     padding: 12px 32px;
     font-weight: 600;
 }
+
+/* Pricing Collapsible Button */
+.view-more-btn {
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 14px 0;
+    padding: 6px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+    outline: none;
+}
+
+.view-more-btn:hover {
+    color: var(--accent);
+}
+
+.view-more-btn[aria-expanded="true"] .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.view-more-btn[aria-expanded="true"] span {
+    content: "View Less";
+}
         /* Portfolio Section */
         .portfolio {
             background: url('assets/index\ banner\ 2.png') center/cover fixed;
