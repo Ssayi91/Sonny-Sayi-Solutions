@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+:root {
+  --primary: #F97316;
+  --dark: #0B0B0D;
+}
+
+a { transition: color .15s ease; }
