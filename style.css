@@ -329,89 +329,126 @@
             color: var(--dark);
         }
 
-        /* Pricing Section */
-        .pricing {
-            background: url('assets/2.png') center/cover fixed;
-        }
+       /* Pricing Section */
+.pricing {
+    background: url('assets/2.png') center/cover fixed;
+}
 
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
-            gap: 25px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        .pricing-card {
-            background: var(--light);
-            border-radius: 12px;
-            padding: 40px 30px;
-            text-align: center;
-            transition: var(--transition);
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border);
-            position: relative;
-        }
+.pricing-card {
+    background: var(--light);
+    border-radius: 14px;
+    padding: 42px 32px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        .pricing-card.popular {
-            border: 2px solid var(--accent);
-            transform: scale(1.03);
-        }
+.pricing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
 
-        .popular-badge {
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--accent);
-            color: white;
-            padding: 5px 20px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
+.pricing-card.popular {
+    border: 2px solid var(--accent);
+    transform: scale(1.02);
+}
 
-        .pricing-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 20px;
-            color: var(--dark);
-        }
+.pricing-card.popular:hover {
+    transform: scale(1.02) translateY(-6px);
+}
 
-        .price {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
+.popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: white;
+    padding: 6px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
 
-        .price span {
-            font-size: 1rem;
-            color: var(--text-light);
-            font-weight: 400;
-        }
+.pricing-card h3 {
+    font-size: 1.35rem;
+    margin: 18px 0 16px;
+    color: var(--dark);
+    font-weight: 600;
+}
 
-        .pricing-card ul {
-            list-style: none;
-            margin-bottom: 30px;
-            text-align: left;
-        }
+.price {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 16px 0;
+    line-height: 1.2;
+}
 
-        .pricing-card ul li {
-            padding: 10px 0;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-        }
+.price span {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
 
-        .pricing-card ul li:last-child {
-            border-bottom: none;
-        }
+.pricing-card p {
+    color: var(--text);
+    margin-bottom: 24px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
 
-        .pricing-card ul li i {
-            color: var(--accent);
-            margin-right: 10px;
-        }
+.pricing-card ul {
+    list-style: none;
+    margin: 26px 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
 
+.pricing-card ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.96rem;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.pricing-card ul li i {
+    color: var(--accent);
+    margin-top: 4px;
+    min-width: 18px;
+    font-size: 0.9rem;
+}
+
+.pricing-card ul li strong {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.pricing-card .btn {
+    margin-top: auto;
+    padding: 12px 32px;
+    font-weight: 600;
+}
         /* Portfolio Section */
         .portfolio {
             background: url('assets/index\ banner\ 2.png') center/cover fixed;
@@ -792,4 +829,5 @@
             opacity: 1;
             transform: translateY(0);
         }
+
   
