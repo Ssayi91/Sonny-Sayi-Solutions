@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonny Sayi Solutions | Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" e/ptype="imagng" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+        <div class="loader-text">Loading Contact...</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <!-- <i class="fas fa-lightbulb"></i> -->
+                </div>
+                <div class="logo-text">S.<span>S</span> Solutions
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content fade-in">
+            <h1>Let's <span>Connect</span> & Create</h1>
+            <p>Have questions or ready to start your project? Our team is here to help you every step of the way.</p>
+            <a href="#contact-form" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="content">
+            <div class="section-title">
+                <h2>Get In Touch With Us</h2>
+                <p>We'd love to hear from you! Reach out for inquiries, quotes, or project discussions.</p>
+            </div>
+            
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-container fade-in">
+                    <h3>Send Us a Message</h3>
+                    <p style="color: var(--text-light); margin-bottom: 20px;">We typically respond within 24 hours</p>
+                    
+                    <div id="form-feedback" class="form-feedback"></div>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number (with WhatsApp)</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+254 700 000000" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" class="form-control" required>
+                                <option value="">Select a service</option>
+                                <option value="web">Website Design & Development</option>
+                                <option value="logo">Logo & Branding</option>
+                                <option value="network">Network Infrastructure</option>
+                                <option value="consulting">IT Consulting</option>
+                                <option value="other">Other Service</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" class="form-control" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="installment">
+                            <label for="installment">I'm interested in installment payment plans</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fab fa-whatsapp whatsapp-icon"></i>
+                            Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information and FAQ -->
+                <div class="contact-info-container">
+                    <!-- Contact Details -->
+                    <div class="contact-card fade-in">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Our Location</h4>
+                                <p>Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/254736194051">+254 736 194051</a>
+                                <p>Available 8AM-6PM (Mon-Fri)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:sonny.sayi@gmail.com">sonny.sayi@gmail.com</a>
+                                <p>Response within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Working Hours</h4>
+                                <p>Monday - Friday: 8AM - 6PM</p>
+                                <p>Saturday: 10AM - 2PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Section -->
+                    <div class="faq-section fade-in">
+                        <h3>Frequently Asked Questions</h3>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Do you offer payment installment plans? <span class="installment-badge">Popular</span></h4>
+                                <div class="faq-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="faq-answer-content">
+                                    <p>Yes, we offer flexible installment plans for projects over KES 20,000. Our standard plan includes:</p>
+                                    <ul style="padding-left: 20px; margin: 15px 0;">
+                                        <li><strong>50% deposit</strong> to start the project</li>
+                                        <li><strong>30% payment</strong> upon completion of milestones</li>
+                                        <li><strong>20% final payment</strong> upon project delivery</li>
+                                    </ul>
+                                    <p>We can customize payment schedules based on your project size and duration. Just indicate your interest in the contact form above.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>How long does a typical website project take?</h4>
+                                <div class="faq-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="faq-answer-content">
+                                    <p>Project timelines vary based on complexity, but here's our typical schedule:</p>
+                                    <ul style="padding-left: 20px; margin: 15px 0;">
+                                        <li><strong>Basic websites</strong>: 1-2 weeks</li>
+                                        <li><strong>E-commerce sites</strong>: 4-6 weeks</li>
+                                        <li><strong>Custom web applications</strong>: 6-12 weeks</li>
+                                    </ul>
+                                    <p>We'll provide a detailed timeline after our initial consultation and project scope definition.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>What ongoing support do you provide?</h4>
+                                <div class="faq-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="faq-answer-content">
+                                    <p>We offer several support options tailored to your needs:</p>
+                                    <ul style="padding-left: 20px; margin: 15px 0;">
+                                        <li><strong>Basic Support</strong>: KES 3,000/month (security updates, minor fixes)</li>
+                                        <li><strong>Premium Support</strong>: KES 8,000/month (includes content updates, performance optimization)</li>
+                                        <li><strong>Enterprise Support</strong>: Custom packages for large businesses</li>
+                                    </ul>
+                                    <p>All projects come with 30 - 60 days (depends on the project/website type) of free support after launch.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="map-section">
+        <div class="map-container fade-in">
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Nairobi, Kenya</h3>
+                <p>We serve clients throughout Kenya and internationally</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sonny Sayi Solutions</h3>
+                <p>Crafting digital experiences that drive results and exceed expectations.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Website Design & Development</a></li>
+                    <li><a href="#">Logo & Branding</a></li>
+                    <li><a href="#">Network Infrastructure</a></li>
+                    <li><a href="#">IT Consulting</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    <li><i class="fab fa-whatsapp"></i> +254 736 194051</li>
+                    <li><i class="fas fa-envelope"></i>info@sonnysayisolutions.co.ke</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 8AM-5PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sonny Sayi Solutions</p>
+        </div>
+    </footer>
+<script src="contact.js"></script>
+</body>
+</html>
