@@ -65,39 +65,135 @@ ul {
 .nav {
   max-width: 1200px;
   margin: auto;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.5rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between; /* Keeps logo left, toggle right on mobile */
+  position: relative;
 }
 
-.logo {
-  font-size: 1.05rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-}
-
-.logo span {
-  color: var(--accent);
-}
-
-.nav-links {
+/* LOGO WITH IMAGE */
+.nav-logo {
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
   display: flex;
-  gap: 1.8rem;
+  align-items: center;
+  gap: 0.6rem;
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+.nav-logo-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-logo span {
+  color: #6cf2c2;
+}
+
+/* HAMBURGER BUTTON */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #eaeaea;
+  transition: 0.3s;
+}
+
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* MOBILE NAV */
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(11, 13, 16, 0.98);
+  padding: 2rem 0;
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.4s ease;
+  margin: 0;
+  justify-content: center;
 }
 
 .nav-links a {
-  font-size: 0.92rem;
+  font-size: 1.1rem;
   opacity: 0.85;
-  transition: opacity var(--motion-fast);
+  padding: 0.6rem 0;
+  color: #eaeaea;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  opacity: 1;
-  color: var(--accent);
+.nav-links.open {
+  clip-path: inset(0 0 0 0);
 }
 
+/* DESKTOP STYLES */
+@media (min-width: 768px) {
+  /* Hide hamburger completely */
+  .nav-toggle {
+    display: none !important;
+  }
+
+  /* Turn nav into a centered row */
+  .nav {
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  /* Style nav links */
+  .nav-links {
+    display: flex !important;
+    flex-direction: row !important;
+    position: static !important;
+    background: transparent !important;
+    clip-path: none !important;
+    padding: 0 !important;
+    gap: 2rem;
+    margin: 0;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.85;
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  .nav-links a.active,
+  .nav-links a:hover {
+    opacity: 1;
+    color: #6cf2c2;
+  }
+}
 /* ======================================================
    HERO
 ====================================================== */
