@@ -1,412 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional IT services for Kenyan businesses: web development, branding, network infrastructure & CRM strategy—including Salesforce guidance—to capture leads, retain customers, and drive growth.">
-    <meta name="keywords" content="Web Design Nairobi, IT Consultancy Kenya, Business Website Developer, Network Setup Nairobi, Affordable Web Developer Kenya, Salesforce Consultant Kenya, CRM for SMEs Nairobi, Sonny Sayi Solutions">
-    <title>Our Services | Sonny Sayi Solutions – Web, IT & CRM Solutions for Kenyan SMEs</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="service.css">
-    <link rel="icon" e/ptype="imagng" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<meta name="description" content="Professional IT services for Kenyan businesses: web development, branding, network infrastructure & CRM strategy—including Salesforce guidance—to capture leads, retain customers, and drive growth.">
+<meta name="keywords" content="Web Design Nairobi, IT Consultancy Kenya, Business Website Developer, Network Setup Nairobi, Affordable Web Developer Kenya, Salesforce Consultant Kenya, CRM for SMEs Nairobi, Sonny Sayi Solutions">
+<meta name="author" content="Sonny Sayi Solutions">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Sonny Sayi Solutions",
+  "url": "https://sonnysayisolutions.co.ke",
+  "logo": "https://sonnysayisolutions.co.ke/assets/logo.png",
+  "description": "Professional web, IT, and CRM solutions for Kenyan SMEs, focused on clarity, performance, and growth.",
+  "areaServed": "KE",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+254736194051",
+    "contactType": "customer support"
+  },
+  "sameAs": ["https://www.linkedin.com/in/sonny-sayi-160835a7/"]
+}
+</script>
+
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="service.css">
+
+<title>Our Services | Sonny Sayi Solutions – Web, IT & CRM Solutions for Kenyan SMEs</title>
 </head>
 <body>
-    <!-- Preloader -->
-   <div id="preloader">
-        <div class="spinner"></div>
-        <div class="loader-text">Loading S.S Solutions...</div>
-    </div>
 
-    <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <a href="#" class="logo">
-                <div class="logo-icon">
-                    <!-- <i class="fas fa-lightbulb"></i> -->
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+    <div class="spinner"></div>
+    <div class="loader-text">Loading S.S Solutions...</div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">S.<span>S</span> Solutions</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html" class="active">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="service-hero">
+    <div class="hero-content fade-in">
+        <h1>Strategic <span>Digital Solutions</span> That Simplify & Grow Your Business</h1>
+        <p>We don’t just build websites or fix networks—we design systems that reduce your workload, capture more customers, and position your business for long-term success in Kenya’s digital economy—including smart CRM strategies to retain every lead.</p>
+        <div class="hero-btns">
+            <a href="#contact" class="btn">Get a Free Consultation</a>
+            <a href="#services" class="btn btn-outline">Explore Our Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services-section" id="services">
+    <div class="content">
+
+        <!-- Web Development -->
+        <div class="service-flow light fade-in">
+            <div class="service-text">
+                <i class="fas fa-laptop-code service-icon"></i>
+                <h2>Professional Web Development</h2>
+                <p>Your website is your 24/7 sales team, brand ambassador, and customer support desk—all in one. We build fast, mobile-optimized websites, convert visitors into leads, and rank well on Google for local searches.</p>
+                
+                <div class="benefits-box">
+                    <h3><i class="fas fa-star"></i> Business Value Delivered</h3>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check-circle"></i> Instant credibility</li>
+                        <li><i class="fas fa-check-circle"></i> Mobile-first design</li>
+                        <li><i class="fas fa-check-circle"></i> Lead capture 24/7</li>
+                        <li><i class="fas fa-check-circle"></i> Local SEO foundation</li>
+                        <li><i class="fas fa-check-circle"></i> Easy self-management</li>
+                    </ul>
                 </div>
-                <div class="logo-text">S.<span>S</span> Solutions</div>
-            </a>
-            <ul class="nav-links">
+            </div>
+            <div class="service-media">
+                <img src="assets/services/web.jpg" alt="Web Development" class="parallax">
+            </div>
+        </div>
+
+        <!-- Branding -->
+        <div class="service-flow dark reverse fade-in">
+            <div class="service-media">
+                <img src="assets/services/brand.jpg" alt="Brand & Graphic Design" class="parallax">
+            </div>
+            <div class="service-text">
+                <i class="fas fa-palette service-icon"></i>
+                <h2>Strategic Brand & Graphic Design</h2>
+                <p>Great design isn’t about looking “pretty”—it’s about clear communication. We create visual identities that help customers instantly understand what you offer, why you’re different, and why they should trust you.</p>
+
+                <div class="benefits-box">
+                    <h3><i class="fas fa-star"></i> Business Value Delivered</h3>
+                    <ul class="benefits-list">
+                        <li>Professional first impression</li>
+                        <li>Consistent branding</li>
+                        <li>Clear messaging</li>
+                        <li>Marketing-ready assets</li>
+                        <li>Brand guidelines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Network -->
+        <div class="service-flow light fade-in">
+            <div class="service-text">
+                <i class="fas fa-network-wired service-icon"></i>
+                <h2>Reliable Network Infrastructure</h2>
+                <p>A slow or insecure network doesn’t just waste time—it costs you money. We design and install office networks that are fast, secure, and built to scale.</p>
+
+                <div class="benefits-box">
+                    <h3><i class="fas fa-star"></i> Business Value Delivered</h3>
+                    <ul class="benefits-list">
+                        <li>99%+ uptime</li>
+                        <li>Secure guest & staff Wi-Fi</li>
+                        <li>Structured cabling</li>
+                        <li>Remote access setup</li>
+                        <li>Future-ready design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-media">
+                <img src="assets/services/network.jpg" alt="Network Infrastructure" class="parallax">
+            </div>
+        </div>
+
+        <!-- CRM -->
+        <div class="service-flow dark reverse fade-in">
+            <div class="service-media">
+                <img src="assets/services/crm.jpg" alt="CRM & Digital Strategy" class="parallax">
+            </div>
+            <div class="service-text">
+                <i class="fas fa-users service-icon"></i>
+                <h2>CRM & Digital Strategy for Customer Growth</h2>
+                <p>We help Kenyan SMEs adopt simple, powerful customer relationship systems—including guidance on Salesforce—to track every inquiry, automate follow-ups, and turn one-time buyers into loyal clients.</p>
+
+                <div class="benefits-box">
+                    <h3><i class="fas fa-star"></i> Business Value Delivered</h3>
+                    <ul class="benefits-list">
+                        <li>Never lose a lead again</li>
+                        <li>Automated follow-ups</li>
+                        <li>Sales pipeline visibility</li>
+                        <li>Customer history</li>
+                        <li>CRM-ready systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="education-section">
+    <div class="content fade-in">
+        <h2>Why These Solutions Matter for Your Business</h2>
+        <div class="education-grid">
+            <div class="education-card fade-in">
+                <h3><i class="fas fa-globe"></i> Your Website Is Your Most Important Sales Tool</h3>
+                <p>In Kenya, over 90% of customers research online before visiting a business. A professional website builds trust, works 24/7, and shows your full range of services.</p>
+            </div>
+            <div class="education-card fade-in">
+                <h3><i class="fas fa-server"></i> Your Network Is Your Operational Backbone</h3>
+                <p>A professional network ensures POS systems, WhatsApp, and cloud tools work reliably, separating staff from guest Wi-Fi, and scales with growth.</p>
+            </div>
+            <div class="education-card fade-in">
+                <h3><i class="fas fa-users"></i> Your Customers Are Your Greatest Asset</h3>
+                <p>A CRM ensures you track leads, automate follow-ups, and convert one-time buyers into loyal clients, keeping your business top-of-mind.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT / WHATSAPP FORM ================= -->
+<section class="whatsapp-form" id="contact">
+    <div class="form-container fade-in">
+        <h2>Ready to Simplify & Grow Your Business?</h2>
+        <form id="serviceInquiryForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="WhatsApp Number" required>
+            <select required>
+                <option value="">Select your biggest priority</option>
+                <option>Web Design & Development</option>
+                <option>Graphic Design / Branding</option>
+                <option>Network Setup or Fix</option>
+                <option>CRM / Customer Management System</option>
+            </select>
+            <textarea placeholder="Tell us about your business and challenges" required></textarea>
+            <button type="submit"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+        </form>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="footer-grid fade-in">
+        <div>
+            <h3>Sonny Sayi Solutions</h3>
+            <p>Helping Kenyan SMEs digitize operations—with websites, IT systems, and CRM strategies that drive growth.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="service.html" class="active">Services</a></li>
+                <li><a href="service.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-    </header>
+        </div>
+        <div>
+            <h4>Social</h4>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2025 Sonny Sayi Solutions</p>
+</footer>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content fade-in">
-            <h1>Strategic <span>Digital Solutions</span> That Simplify & Grow Your Business</h1>
-            <p>We don’t just build websites or fix networks—we design systems that reduce your workload, capture more customers, and position your business for long-term success in Kenya’s digital economy—including smart CRM strategies to retain every lead.</p>
-            <div class="hero-btns">
-                <a href="#contact" class="btn">Get a Free Consultation</a>
-                <a href="#services" class="btn btn-outline">Explore Our Services</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section" id="services">
-        <div class="content">
-            <div class="section-title">
-                <h2>Services Built for Kenyan Businesses</h2>
-                <p>No fluff. No over-engineering. Just clear, reliable technology that works as hard as you do.</p>
-            </div>
-            
-            <!-- Web Design Service -->
-            <div class="service-detail fade-in">
-                <div class="service-header">
-                    <div class="service-icon-large">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h2>Professional Web Development</h2>
-                </div>
-                
-                <div class="service-content">
-                    <div>
-                        <p class="service-description">
-                            Your website is your 24/7 sales team, brand ambassador, and customer support desk—all in one. We build fast, mobile-optimized websites, convert visitors into leads, and rank well on Google for local searches like “roofing company in kisumu” or “IT consultant Nairobi.”
-                        </p>
-                        
-                        <div class="benefits-box">
-                            <h3><i class="fas fa-star"></i> Business Value Delivered</h3>
-                            <ul class="benefits-list">
-                                <li><i class="fas fa-check-circle"></i> <strong>Instant credibility</strong>—84% of customers judge a business by its website</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Mobile-first design</strong>—fully responsive for smartphone users</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Lead capture 24/7</strong>—via WhatsApp button, contact forms, and call-to-action prompts</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Local SEO foundation</strong>—structured for Google visibility in your town or county</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Easy self-management</strong>—update your own content </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div class="process-box">
-                            <h3><i class="fas fa-cogs"></i> Our Focused Process</h3>
-                            <ul class="process-steps">
-                                <li><i class="fas fa-comment-alt"></i> Business goal alignment—what problem are we solving?</li>
-                                <li><i class="fas fa-pencil-ruler"></i> Clean, purpose-driven design mockups (no clutter)</li>
-                                <li><i class="fas fa-code"></i> Secure, lightweight development</li>
-                                <li><i class="fas fa-mobile-alt"></i> Real-device testing on Kenyan 4G networks</li>
-                                <li><i class="fas fa-rocket"></i> Launch + 30-day support & training</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="benefits-box">
-                            <h3><i class="fas fa-bullseye"></i> Ideal For</h3>
-                            <ul class="benefits-list">
-                                <li><i class="fas fa-check"></i> Construction firms needing project showcases</li>
-                                <li><i class="fas fa-check"></i> Real estate agents listing properties online</li>
-                                <li><i class="fas fa-check"></i> Retailers selling roofing sheets, tiles, or fittings</li>
-                                <li><i class="fas fa-check"></i> Service businesses replacing Facebook pages with real websites</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Graphic Design Service -->
-            <div class="service-detail fade-in">
-                <div class="service-header">
-                    <div class="service-icon-large">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h2>Strategic Brand & Graphic Design</h2>
-                </div>
-                
-                <div class="service-content">
-                    <div>
-                        <p class="service-description">
-                            Great design isn’t about looking “pretty”—it’s about clear communication. We create visual identities that help customers instantly understand what you offer, why you’re different, and why they should trust you. From logos to social banners, every element works toward business goals.
-                        </p>
-                        
-                        <div class="benefits-box">
-                            <h3><i class="fas fa-star"></i> Business Value Delivered</h3>
-                            <ul class="benefits-list">
-                                <li><i class="fas fa-check-circle"></i> <strong>Professional first impression</strong>—critical for winning tenders or walk-in clients</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Consistent branding</strong>—across WhatsApp, Facebook, signage, and print</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Clear messaging</strong>—no jargon, just what your customer cares about</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Marketing-ready assets</strong>—designed for quick social media use</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Brand guidelines</strong>—so your team uses colors, fonts, and logos correctly</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div class="process-box">
-                            <h3><i class="fas fa-cogs"></i> Our Focused Process</h3>
-                            <ul class="process-steps">
-                                <li><i class="fas fa-comment-alt"></i> Understand your audience and competitive edge</li>
-                                <li><i class="fas fa-lightbulb"></i> Mood boards & concept directions (3 options)</li>
-                                <li><i class="fas fa-drafting-compass"></i> Refine based on your feedback—no guesswork</li>
-                                <li><i class="fas fa-file-export"></i> Deliver in all formats: PNG, JPG, PDF, SVG, print-ready</li>
-                                <li><i class="fas fa-sync-alt"></i> Provide simple brand guide for future use</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="benefits-box">
-                            <h3><i class="fas fa-bullseye"></i> Ideal For</h3>
-                            <ul class="benefits-list">
-                                <li><i class="fas fa-check"></i> New businesses establishing their identity</li>
-                                <li><i class="fas fa-check"></i> Companies rebranding after growth or merger</li>
-                                <li><i class="fas fa-check"></i> Contractors needing professional signage & vehicle branding</li>
-                                <li><i class="fas fa-check"></i> E-commerce stores building product catalog visuals</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Network Admin Service -->
-            <div class="service-detail fade-in">
-                <div class="service-header">
-                    <div class="service-icon-large">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h2>Reliable Network Infrastructure</h2>
-                </div>
-                
-                <div class="service-content">
-                    <div>
-                        <p class="service-description">
-                            A slow or insecure network doesn’t just waste time—it costs you money. We design and install office networks that are fast, secure, and built to scale. Whether you’re running a showroom, workshop, or small office, your team deserves seamless connectivity without constant IT headaches.
-                        </p>
-                        
-                        <div class="benefits-box">
-                            <h3><i class="fas fa-star"></i> Business Value Delivered</h3>
-                            <ul class="benefits-list">
-                                <li><i class="fas fa-check-circle"></i> <strong>99%+ uptime</strong>—minimize disruptions during sales or operations</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Secure guest & staff Wi-Fi</strong>—protect business data from unauthorized access</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Structured cabling</strong>—no tangled wires, easy future upgrades</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Remote access setup</strong>—manage systems from your phone or home</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Future-ready design</strong>—supports CCTV, cloud tools, and more</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div class="process-box">
-                            <h3><i class="fas fa-cogs"></i> Our Focused Process</h3>
-                            <ul class="process-steps">
-                                <li><i class="fas fa-search"></i> Assess current setup & pain points (speed, drops, security)</li>
-                                <li><i class="fas fa-drafting-compass"></i> Design custom layout for your office/shop size</li>
-                                <li><i class="fas fa-server"></i> Install professional-grade routers, switches, and cabling</li>
-                                <li><i class="fas fa-shield-alt"></i> Configure firewall, VLANs, and access controls</li>
-                                <li><i class="fas fa-tools"></i> Test, document, and train your team on usage</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="benefits-box">
-                            <h3><i class="fas fa-bullseye"></i> Ideal For</h3>
-                            <ul class="benefits-list">
-                                <li><i class="fas fa-check"></i> Offices in Nairobi, Mombasa, or growing towns</li>
-                                <li><i class="fas fa-check"></i> Showrooms managing inventory & customer Wi-Fi</li>
-                                <li><i class="fas fa-check"></i> Workshops with digital tools or payment systems</li>
-                                <li><i class="fas fa-check"></i> Businesses upgrading from home routers</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- CRM & Digital Strategy Service -->
-            <div class="service-detail fade-in">
-                <div class="service-header">
-                    <div class="service-icon-large">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h2>CRM & Digital Strategy for Customer Growth</h2>
-                </div>
-                
-                <div class="service-content">
-                    <div>
-                        <p class="service-description">
-                            Losing leads because they vanish in WhatsApp chats? Struggling to follow up with past customers? We help Kenyan SMEs adopt simple, powerful customer relationship systems—including guidance on Salesforce—to track every inquiry, automate follow-ups, and turn one-time buyers into loyal clients.
-                        </p>
-                        
-                        <div class="benefits-box">
-                            <h3><i class="fas fa-star"></i> Business Value Delivered</h3>
-                            <ul class="benefits-list">
-                                <li><i class="fas fa-check-circle"></i> <strong>Never lose a lead again</strong>—capture and track every inquiry in one place</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Automated follow-ups</strong>—send reminders without manual effort</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Sales pipeline visibility</strong>—know which deals are hot vs. cold</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Customer history</strong>—see past interactions before answering calls</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>CRM-ready systems</strong>—we build websites and apps that integrate smoothly with tools like Salesforce</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div class="process-box">
-                            <h3><i class="fas fa-cogs"></i> Our Focused Process</h3>
-                            <ul class="process-steps">
-                                <li><i class="fas fa-project-diagram"></i> Map your customer journey—from first contact to repeat sale</li>
-                                <li><i class="fas fa-tasks"></i> Identify key data to track (leads, quotes, follow-ups)</li>
-                                <li><i class="fas fa-layer-group"></i> Recommend the right CRM approach: custom tool or Salesforce</li>
-                                <li><i class="fas fa-hand-holding"></i> Guide setup, import contacts, and configure workflows</li>
-                                <li><i class="fas fa-chalkboard-teacher"></i> Train your team—so it actually gets used</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="benefits-box">
-                            <h3><i class="fas fa-bullseye"></i> Ideal For</h3>
-                            <ul class="benefits-list">
-                                <li><i class="fas fa-check"></i> Real estate agencies managing property leads</li>
-                                <li><i class="fas fa-check"></i> Construction firms tracking client quotes & projects</li>
-                                <li><i class="fas fa-check"></i> Auto dealerships following up on vehicle inquiries</li>
-                                <li><i class="fas fa-check"></i> Service businesses (plumbers, electricians) with repeat customers</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="education-section" id="education">
-        <div class="education-content">
-            <h2>Why These Solutions Matter for Your Business</h2>
-            <div class="education-grid">
-                <div class="education-card fade-in">
-                    <h3><i class="fas fa-globe"></i> Your Website Is Your Most Important Sales Tool</h3>
-                    <p>In Kenya, over 90% of customers research online before visiting a business. A professional website:</p>
-                    <ul>
-                        <li>Builds instant trust—especially vs. competitors using only WhatsApp</li>
-                        <li>Works 24/7 to capture leads while you sleep</li>
-                        <li>Shows your full range of services or products (not just what fits in a bio)</li>
-                        <li>Improves Google visibility for local searches</li>
-                        <li>Reduces repetitive calls (“Do you offer X?”) with clear info online</li>
-                    </ul>
-                    <p>A well-built site pays for itself in just a few new clients.</p>
-                </div>
-                
-                <div class="education-card fade-in">
-                    <h3><i class="fas fa-server"></i> Your Network Is Your Operational Backbone</h3>
-                    <p>When your internet drops during a payment or your files won’t load, you lose time—and customers. A professional network:</p>
-                    <ul>
-                        <li>Separates staff traffic from guest Wi-Fi for security</li>
-                        <li>Ensures POS systems, WhatsApp, and cloud tools work reliably</li>
-                        <li>Prevents data leaks from unsecured connections</li>
-                        <li>Scales as you add cameras, printers, or new staff</li>
-                    </ul>
-                    <p>For under 20,000 Kshs, you can eliminate daily tech frustrations for months.</p>
-                </div>
-                
-                <div class="education-card fade-in">
-                    <h3><i class="fas fa-users"></i> Your Customers Are Your Greatest Asset—Don’t Lose Them</h3>
-                    <p>Most Kenyan SMEs lose 60–80% of leads because they lack a system to follow up. A CRM helps you:</p>
-                    <ul>
-                        <li>Remember who asked for a quote last month</li>
-                        <li>Send birthday or service reminders automatically</li>
-                        <li>Track which marketing channel brings the best clients</li>
-                        <li>Upsell to past customers</li>
-                    </ul>
-                    <p>You don’t need complexity—just a simple, reliable way to stay top-of-mind.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WhatsApp Form Section -->
-    <section class="whatsapp-form" id="contact">
-        <div class="form-container fade-in">
-            <h2>Ready to Simplify & Grow Your Business?</h2>
-            <p>Book a free 30-minute consultation. We’ll listen, ask smart questions, and suggest clear next steps—no pressure.</p>
-            
-            <form id="serviceInquiryForm">
-                <div class="form-group">
-                    <label for="name">Your Full Name</label>
-                    <input type="text" id="name" placeholder="e.g. Jane Mwangi" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Professional Email</label>
-                    <input type="email" id="email" placeholder="e.g. jane@yourbusiness.co.ke" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">WhatsApp Number</label>
-                    <input type="tel" id="phone" placeholder="+2547XX XXX XXX" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="service">Primary Need</label>
-                    <select id="service" required>
-                        <option value="">Select your biggest priority</option>
-                        <option>Web Design & Development</option>
-                        <option>Graphic Design / Branding</option>
-                        <option>Network Setup or Fix</option>
-                        <option>CRM / Customer Management System</option>
-                        <option>Multiple Needs – Let’s Discuss</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Tell us about your business and challenges</label>
-                    <textarea id="message" placeholder="What are you trying to achieve? What’s not working right now? (e.g. 'I lose leads because I only use WhatsApp')" required></textarea>
-                </div>
-                
-                <button type="submit" class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Send via WhatsApp
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>Sonny Sayi Solutions</h3>
-                <p>Helping Kenyan SMEs digitize operations—with websites, IT systems, and CRM strategies that drive customer growth and operational clarity.</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/sonny-sayi-160835a7/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:info@sonnysayisolutions.co.ke"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Our Services</h3>
-                <ul class="footer-links">
-                    <li><a href="#services">Web Development</a></li>
-                    <li><a href="#services">Brand & Design</a></li>
-                    <li><a href="#services">Network Infrastructure</a></li>
-                    <li><a href="#services">CRM & IT Consultancy</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Contact Info</h3>
-                <ul class="footer-links">
-                    <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
-                    <li><i class="fab fa-whatsapp"></i> +254 736 194051</li>
-                    <li><i class="fas fa-envelope"></i> info@sonnysayisolutions.co.ke</li>
-                    <li><i class="fas fa-clock"></i> Mon-Fri: 8AM–5PM</li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025 Sonny Sayi Solutions — Digital Clarity for Kenyan Business Growth</p>
-        </div>
-    </footer>
 <script src="service.js"></script>
 </body>
 </html>
