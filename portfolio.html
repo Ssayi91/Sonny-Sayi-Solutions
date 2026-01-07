@@ -28,19 +28,30 @@
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-
 <!-- ================= HEADER ================= -->
 <header class="site-header" role="banner">
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <a href="index.html" class="logo" aria-label="Return to homepage">S<span>.</span>S Solutions</a>
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="/assets/bg2-removebg-preview.png" alt="Sonny Sayi Solutions" class="nav-logo-img" />
+      Sonny <span>Sayi</span> Solutions
+    </a>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="service.html">Services</a></li>
-      <li><a href="portfolio.html" class="active" aria-current="page">Portfolio</a></li>
+      <li><a class="active" href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
 </header>
+
+
 
 <!-- ================= HERO ================= -->
 <section class="portfolio-hero" aria-labelledby="hero-heading">
@@ -140,7 +151,7 @@
     <div class="logo-projects">
       <!-- Use grid instead of JS carousel for performance & simplicity -->
       <div class="logo-item">
-        <img src="assets/Untitled design.png" alt="Geotronics Engineering logo">
+        <img src="assets/Untitled_design.png" alt="Geotronics Engineering logo">
         <h3>geotronics-engineering</h3>
         <p>Borehole Drilling Company</p>
       </div>

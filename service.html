@@ -25,26 +25,31 @@
 <body>
 
 <!-- ================= HEADER ================= -->
+<!-- ================= HEADER ================= -->
 <header class="site-header" role="banner">
-      <nav class="nav">
-      <a href="index.html" class="nav-logo">
-  <img src="/assets/bg2-removebg-preview.png" alt="Sonny Sayi Solutions" class="nav-logo-img" />
-  Sonny <span>Sayi</span> Solutions
-</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="service.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
-</header>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <!-- Logo stays on left -->
+    <a href="index.html" class="nav-logo">
+      <img src="/assets/bg2-removebg-preview.png" alt="Sonny Sayi Solutions" class="nav-logo-img" />
+      Sonny <span>Sayi</span> Solutions
+    </a>
 
+    <!-- Hamburger button -->
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menu (hidden on mobile by default) -->
+    <ul id="nav-menu" class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="service.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 <!-- ================= HERO ================= -->
 <section class="service-hero" aria-labelledby="hero-heading">
   <div class="hero-inner">

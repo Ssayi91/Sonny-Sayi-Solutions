@@ -128,3 +128,12 @@
         
         // Initialize carousel
         updateCarousel();
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('open'); // match CSS
+    toggleButton.classList.toggle('active'); // animate hamburger
+  });
+});

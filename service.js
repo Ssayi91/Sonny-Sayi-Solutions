@@ -1,3 +1,35 @@
+document.addEventListener("DOMContentLoaded", () => {
+  // Mobile Nav Toggle
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('#nav-menu');
+    const body = document.body;
+
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', !isexpanded);
+        menu.classList.toggle('open');
+
+        // Optional: prevent body scroll when menu open (mobile)
+        if (!isExpanded) {
+          body.style.overflow = 'hidden';
+        } else {
+          body.style.overflow = '';
+        }
+      });
+
+      // Close menu when clicking a link (mobile UX)
+      menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.remove('open');
+          toggle.setAttribute(' aria-expanded', 'false');
+          body.style.overflow = '';
+        });
+      });
+    }
+  });
+
 /* =========================
    FADE & PARALLAX
 ========================= */
@@ -25,14 +57,4 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 });
 
-/* =========================
-   MOBILE NAV
-========================= */
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-  });
-}
+});

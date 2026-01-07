@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", () => {
   // Mobile Nav Toggle
   const navToggle = document.querySelector(".nav-toggle");
@@ -97,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-=======
 
         // Preloader
         window.addEventListener('load', function() {
@@ -191,4 +189,3 @@ document.querySelectorAll('.view-more-btn').forEach(button => {
         }
     });
 });
->>>>>>> 93fe13a408558de28a8ecbf600e63861657fdb2b
