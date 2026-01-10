@@ -1,168 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonny Sayi Solutions | Portfolio</title>
 
-    <!-- SEO & Verification -->
-    <meta name="google-site-verification" content="w7OGhPIfhzv2-S4UGi4BEAJCbf3hyNGBImy-l1Pubmc" />
-    <meta name="description" content="We provide professional web development, graphic design, and network infrastructure services in Kenya. Build your online presence today.">
-    <meta name="keywords" content="Web Design, Graphic Design, IT Consultancy, Networking, Nairobi, Kenya">
-    <meta name="keywords" content="Sonny Sayi I.T. Solutions | Website Design, IT & Branding in Kenya">
-    <meta name="keywords" content="Our Work | Sonny Sayi I.T. Solutions Web Design & Branding Portfolio">
-    <meta name="author" content="Sonny Sayi Solutions">
-    <title>Sonny Sayi Solutions | Portfolio</title>
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="portfolio.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-<!-- ================= HEADER ================= -->
-<header class="site-header" role="banner">
-  <nav class="nav">
-    <a href="index.html" class="nav-logo">
-      <img src="/assets/bg2-removebg-preview.png" alt="Sonny Sayi Solutions" class="nav-logo-img" />
-      Sonny <span>Sayi</span> Solutions
-    </a>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="service.html">Services</a></li>
-      <li><a class="active" href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  SITE HEADER / NAV
+  ========================= -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">
+  <img src="/assets/bg2-removebg-preview.png" alt="Sonny Sayi Solutions" class="nav-logo-img" />
+  Sonny <span>Sayi</span> Solutions
+</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a class="active" href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
 
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </nav>
-</header>
 
-
-
-<!-- ================= HERO ================= -->
-<section class="portfolio-hero" aria-labelledby="hero-heading">
-  <div class="hero-inner">
-    <h1 id="hero-heading">Our <span>Creative</span> Portfolio</h1>
-    <p>Showcasing our best work in web design, logo creation, and network solutions</p>
-    <a href="#portfolio" class="btn">Explore Projects</a>
-  </div>
-</section>
-
+  <!-- =========================
+  INTRO / OPENING STATEMENT
+  ========================= -->
+  <section id="intro" class="intro">
+    <div class="intro-inner">
+      <span class="eyebrow">Sonny Sayi Solutions</span>
+      <h1>
+        Our Portfolio: Showcasing Excellence in <br>
+         Web Design, Branding and IT Solutions
+        
+      </h1>
+    </div>
+  </section>
 <!-- ================= WEBSITE PROJECTS ================= -->
 <section id="portfolio" class="portfolio-section">
   <div class="section-container">
-    <div class="section-header">
+    <div class="section-header fade-up">
       <h2>Website Projects</h2>
       <p>Professional websites crafted for diverse industries</p>
     </div>
 
-    <div class="portfolio-grid">
-      <!-- Pasi Dental -->
-      <article class="portfolio-card">
-        <span class="card-badge">Website</span>
-        <img src="assets/pasi dental.png" alt="Pasi Dental Clinic website">
-        <div class="portfolio-content">
-          <h3>Pasi Dental Clinic</h3>
-          <p>Professional Dental website with appointment booking system for a leading dental practice.</p>
-          <a href="https://pasidentalcare.co.ke/" target="_blank" rel="noopener">View Live Site <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
-        </div>
-      </article>
+    <!-- Alternating project layout -->
+    <article class="project-row">
+      <div class="project-media slide-left">
+        <img src="assets/pasi dental.png" alt="Pasi Dental Clinic">
+      </div>
+      <div class="project-info slide-right">
+        <span class="project-type">Website</span>
+        <h3>Pasi Dental Clinic</h3>
+        <p>Professional dental website with appointment booking system and WhatsApp integration for seamless communication.</p>
+        <a href="https://pasidentalcare.co.ke/" target="_blank">View Live <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </article>
 
-      <!-- Geotronics -->
-      <article class="portfolio-card">
-        <span class="card-badge">Website</span>
-        <img src="assets/geotronics.PNG" alt="Geotronics Engineering website">
-        <div class="portfolio-content">
-          <h3>Geotronics Engineering</h3>
-          <p>Corporate site for borehole drilling company showcasing services and projects.</p>
-          <a href="https://geotronics.co.ke/" target="_blank" rel="noopener">View Live Site <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
-        </div>
-      </article>
+    <article class="project-row reverse">
+      <div class="project-media slide-right">
+        <img src="assets/geotronics.PNG" alt="Geotronics Engineering">
+      </div>
+      <div class="project-info slide-left">
+        <span class="project-type">Website</span>
+        <h3>Geotronics Engineering</h3>
+        <p>Corporate site for borehole drilling company showcasing services, projects, and client portfolio.</p>
+        <a href="https://geotronics.co.ke/" target="_blank">View Live <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </article>
 
-      <!-- Eye On Property -->
-      <article class="portfolio-card">
-        <span class="card-badge">Website</span>
-        <img src="assets/eyeonproperty.png" alt="Eye On Property real estate website">
-        <div class="portfolio-content">
-          <h3>Eye On Property</h3>
-          <p>Real estate and Design website.</p>
-          <a href="https://eyeonproperty.co.ke" target="_blank" rel="noopener">View Live Site <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
-        </div>
-      </article>
+    <article class="project-row">
+      <div class="project-media slide-left">
+        <img src="assets/eyeonproperty.png" alt="Eye On Property">
+      </div>
+      <div class="project-info slide-right">
+        <span class="project-type">Website</span>
+        <h3>Eye On Property</h3>
+        <p>Real estate website designed to display properties, attract buyers, and integrate smooth search features.</p>
+        <a href="https://eyeonproperty.co.ke" target="_blank">View Live <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </article>
 
-      <!-- Madaraka Dental -->
-      <article class="portfolio-card">
-        <span class="card-badge">Website</span>
-        <img src="assets/Madaraka Dental.png" alt="Madaraka Dental Centre website">
-        <div class="portfolio-content">
-          <h3>Madaraka Dental</h3>
-          <p>Fresh look of a dental clinic with services and integrated WhatsApp for communication.</p>
-          <a href="http://madarakadentalcentre.co.ke/" target="_blank" rel="noopener">View Live Site <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
-        </div>
-      </article>
+    <article class="project-row reverse">
+      <div class="project-media slide-right">
+        <img src="assets/Madaraka Dental.png" alt="Madaraka Dental">
+      </div>
+      <div class="project-info slide-left">
+        <span class="project-type">Website</span>
+        <h3>Madaraka Dental</h3>
+        <p>Fresh look for a dental clinic with services and integrated WhatsApp communication for client convenience.</p>
+        <a href="http://madarakadentalcentre.co.ke/" target="_blank">View Live <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </article>
 
-      <!-- Motorbike World -->
-      <article class="portfolio-card">
-        <span class="card-badge">Website</span>
-        <img src="assets/MBW.png" alt="Motorbike World dealership website">
-        <div class="portfolio-content">
-          <h3>Motorbike World</h3>
-          <p>A Motorbike Dealership with more than just a selling platform—it also has parts, accessories, and more.</p>
-          <a href="https://ssayi91.github.io/Motorbike-dealer-2/index.html" target="_blank" rel="noopener">View Live Site <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
-        </div>
-      </article>
+    <article class="project-row">
+      <div class="project-media slide-left">
+        <img src="assets/MBW.png" alt="Motorbike World">
+      </div>
+      <div class="project-info slide-right">
+        <span class="project-type">Website</span>
+        <h3>Motorbike World</h3>
+        <p>Motorbike dealership site with listings for bikes, accessories, and parts—fully interactive and customer-friendly.</p>
+        <a href="https://ssayi91.github.io/Motorbike-dealer-2/index.html" target="_blank">View Live <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </article>
 
-      <!-- Autoshow Kenya -->
-      <article class="portfolio-card">
-        <span class="card-badge">Website</span>
-        <img src="assets/Autoshow kenya fb banner (1).png" alt="Autoshow Kenya automotive marketplace">
-        <div class="portfolio-content">
-          <h3>Autoshow Kenya Marketplace</h3>
-          <p>Online automotive marketplace supporting multiple dealerships across Kenya, allowing each dealer to create a storefront, list vehicles, and connect with buyers seamlessly.</p>
-          <a href="https://autoshow-kenya.vercel.app/" target="_blank" rel="noopener">View Live Site <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
-        </div>
-      </article>
-    </div>
+    <article class="project-row reverse">
+      <div class="project-media slide-right">
+        <img src="assets/Autoshow kenya fb banner (1).png" alt="Autoshow Kenya">
+      </div>
+      <div class="project-info slide-left">
+        <span class="project-type">Website</span>
+        <h3>Autoshow Kenya Marketplace</h3>
+        <p>Online automotive marketplace supporting multiple dealerships across Kenya with storefronts and listings.</p>
+        <a href="https://autoshow-kenya.vercel.app/" target="_blank">View Live <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </article>
   </div>
 </section>
 
 <!-- ================= LOGO DESIGN ================= -->
 <section class="portfolio-section">
-  <div class="section-container">
+  <div class="section-container fade-up">
     <div class="section-header">
-      <h2>Logo Design Projects</h2>
+      <h2>Logo & Brand Identity</h2>
       <p>Creative brand identities that make a lasting impression</p>
     </div>
 
-    <div class="logo-projects">
-      <!-- Use grid instead of JS carousel for performance & simplicity -->
+    <div class="logo-projects stagger">
       <div class="logo-item">
         <img src="assets/Untitled_design.png" alt="Geotronics Engineering logo">
-        <h3>geotronics-engineering</h3>
+        <h3>Geotronics Engineering</h3>
         <p>Borehole Drilling Company</p>
       </div>
       <div class="logo-item">
         <img src="assets/Fusion Flavor.png" alt="Fusion Flavor logo">
         <h3>Fusion Flavor</h3>
-        <p>Spice dealer</p>
+        <p>Spice Dealer</p>
       </div>
       <div class="logo-item">
         <img src="assets/Pasi logo.png" alt="Pasi Dental logo">
-        <h3>pasi-dental</h3>
+        <h3>Pasi Dental</h3>
         <p>Dental Clinic</p>
       </div>
       <div class="logo-item">
@@ -175,23 +167,23 @@
 </section>
 
 <!-- ================= NETWORK INFRASTRUCTURE ================= -->
-<section class="portfolio-section">
+<section class="portfolio-section fade-up">
   <div class="section-container">
     <div class="section-header">
       <h2>Network Infrastructure Projects</h2>
       <p>Robust networking solutions for businesses and institutions</p>
     </div>
 
-    <article class="network-project">
-      <img src="assets/bridgan logo.png" alt="Bridgan Girls High School logo" class="network-logo">
+    <article class="network-project slide-up">
+      <img src="assets/bridgan logo.png" alt="Bridgan Girls High School" class="network-logo">
       <div class="network-details">
         <h3>Bridgan Girls High School</h3>
         <ul>
-          <li><i class="fas fa-check-circle" aria-hidden="true"></i> Complete network infrastructure overhaul for admin block and computer lab</li>
-          <li><i class="fas fa-check-circle" aria-hidden="true"></i> Structured cabling and installation of new network points</li>
-          <li><i class="fas fa-check-circle" aria-hidden="true"></i> Router installation connecting admin block to computer lab</li>
-          <li><i class="fas fa-check-circle" aria-hidden="true"></i> Switch configuration for optimal network performance</li>
-          <li><i class="fas fa-check-circle" aria-hidden="true"></i> Machine connectivity setup and network testing</li>
+          <li><i class="fas fa-check-circle"></i> Complete network infrastructure overhaul for admin block and computer lab</li>
+          <li><i class="fas fa-check-circle"></i> Structured cabling and installation of new network points</li>
+          <li><i class="fas fa-check-circle"></i> Router installation connecting admin block to computer lab</li>
+          <li><i class="fas fa-check-circle"></i> Switch configuration for optimal network performance</li>
+          <li><i class="fas fa-check-circle"></i> Machine connectivity setup and network testing</li>
         </ul>
         <div class="tech-tags">
           <span>Structured Cabling</span>
@@ -206,106 +198,81 @@
 
 <!-- ================= TESTIMONIALS ================= -->
 <section class="portfolio-section testimonials-section">
-  <div class="section-container">
+  <div class="section-container fade-up">
     <div class="section-header">
-      <h2 style="color: var(--text-main);">Client Testimonials</h2>
-      <p style="color: var(--text-muted);">What our clients say about our work</p>
+      <h2>Client Testimonials</h2>
+      <p>What our clients say about our work</p>
     </div>
 
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
+    <div class="testimonials-grid stagger">
+      <div class="testimonial-card slide-up">
         <div class="client-info">
-          <div class="client-avatar">
-            <i class="fas fa-hospital" aria-hidden="true"></i>
-          </div>
-          <div>
-            <h3>Madaraka Dental Centre</h3>
-            <p>Healthcare Provider in Nairobi</p>
-          </div>
+          <div class="client-avatar"><i class="fas fa-hospital"></i></div>
+          <div><h3>Madaraka Dental Centre</h3><p>Healthcare Provider in Nairobi</p></div>
         </div>
-        <p>"Sonny Sayi Solutions brought our vision to life with exceptional precision. They took our design concepts and color scheme requirements and transformed them into a beautiful, functional website that perfectly represents our medical practice."</p>
-        <div class="project-tag">
-          <i class="fas fa-laptop-medical" aria-hidden="true"></i>
-          <span>Medical Website Development Project</span>
-        </div>
+        <p>"Sonny Sayi Solutions brought our vision to life with exceptional precision."</p>
+        <div class="project-tag"><i class="fas fa-laptop-medical"></i> Medical Website Project</div>
       </div>
 
-      <div class="testimonial-card">
+      <div class="testimonial-card slide-up">
         <div class="client-info">
-          <div class="client-avatar">
-            <i class="fas fa-tooth" aria-hidden="true"></i>
-          </div>
-          <div>
-            <h3>Pasi Dental Care</h3>
-            <p>Dental Practice in Nairobi</p>
-          </div>
+          <div class="client-avatar"><i class="fas fa-tooth"></i></div>
+          <div><h3>Pasi Dental Care</h3><p>Dental Practice in Nairobi</p></div>
         </div>
-        <p>"From concept to completion, Sonny Sayi Solutions delivered a comprehensive branding package that exceeded our expectations. They created our logo and designed a user-friendly website that perfectly captures our practice's professional image."</p>
-        <div class="project-tag">
-          <i class="fas fa-paint-brush" aria-hidden="true"></i>
-          <span>Complete Branding & Website Package</span>
-        </div>
+        <p>"From concept to completion, Sonny Sayi Solutions delivered a comprehensive branding package."</p>
+        <div class="project-tag"><i class="fas fa-paint-brush"></i> Complete Branding & Website Package</div>
       </div>
 
-      <div class="testimonial-card">
+      <div class="testimonial-card slide-up">
         <div class="client-info">
-          <div class="client-avatar">
-            <i class="fas fa-school" aria-hidden="true"></i>
-          </div>
-          <div>
-            <h3>Bridgan Girls High School</h3>
-            <p>Education Institution</p>
-          </div>
+          <div class="client-avatar"><i class="fas fa-school"></i></div>
+          <div><h3>Bridgan Girls High School</h3><p>Education Institution</p></div>
         </div>
-        <p>"Sonny Sayi Solutions completely transformed our network infrastructure. The admin block and computer lab now have reliable, high-speed connectivity that supports our educational programs. Did the restructuring and cabling as well as configurations of the computers in the lab."</p>
-        <div class="project-tag">
-          <i class="fas fa-network-wired" aria-hidden="true"></i>
-          <span>Network Infrastructure Overhaul</span>
-        </div>
+        <p>"Sonny Sayi Solutions completely transformed our network infrastructure."</p>
+        <div class="project-tag"><i class="fas fa-network-wired"></i> Network Infrastructure Overhaul</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ================= CLIENTS ================= -->
-<section class="portfolio-section">
+<section class="portfolio-section fade-up">
   <div class="section-container">
     <div class="section-header">
-      <h2>We've had the privilege to work with</h2>
+      <h2>Our Clients</h2>
     </div>
-    <div class="clients-grid">
+    <div class="clients-grid stagger">
       <img src="assets/Pasi logo.png" alt="Pasi Dental">
       <img src="assets/Untitled_design.png" alt="Geotronics">
       <img src="assets/Fusion Flavor.png" alt="Fusion Flavor">
       <img src="assets/bridgan logo.png" alt="Bridgan Girls">
       <img src="assets/MDC Logo.png" alt="Madaraka Dental">
-      <img src="assets/Eye Logo_250828_120851.jpg" alt="Eye On Property" style="border-radius: 5px;">
+      <img src="assets/Eye Logo_250828_120851.jpg" alt="Eye On Property">
     </div>
   </div>
 </section>
 
 <!-- ================= CTA ================= -->
-<section class="portfolio-cta">
+<section class="portfolio-cta fade-up">
   <div class="section-container">
     <h2>Ready to Start Your Project?</h2>
-    <p>Whether you need a stunning website, memorable branding, or reliable network infrastructure, we're here to transform your vision into reality.</p>
+    <p>Whether it’s a stunning website, memorable branding, or reliable IT solutions, we transform your vision into reality.</p>
     <a href="contact.html" class="btn">Contact Us Today</a>
   </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
-<footer class="site-footer" role="contentinfo">
+<footer class="site-footer fade-up">
   <div class="footer-grid">
     <div class="footer-col">
       <h3>Sonny Sayi Solutions</h3>
-      <p>Helping Kenyan SMEs digitize operations—with websites, IT systems, and CRM strategies that drive customer growth and operational clarity.</p>
+      <p>Helping Kenyan SMEs digitize operations with websites, IT systems, and CRM strategies.</p>
       <div class="footer-social">
-        <a href="https://www.linkedin.com/in/sonny-sayi-160835a7/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=61577290837456" target="_blank" rel="noopener" aria-label="Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-        <a href="mailto:info@sonnysayisolutions.co.ke" aria-label="Send email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/sonny-sayi-160835a7/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61577290837456"><i class="fab fa-facebook-f"></i></a>
+        <a href="mailto:info@sonnysayisolutions.co.ke"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
-
     <div class="footer-col">
       <h4>Quick Links</h4>
       <ul>
@@ -315,9 +282,8 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-
     <div class="footer-col">
-      <h4>Our Services</h4>
+      <h4>Services</h4>
       <ul>
         <li><a href="service.html">Web Design & Development</a></li>
         <li><a href="service.html">Graphic Design</a></li>
@@ -325,27 +291,19 @@
         <li><a href="service.html">IT & CRM Consultancy</a></li>
       </ul>
     </div>
-
     <div class="footer-col">
       <h4>Contact</h4>
       <ul>
-        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Nairobi, Kenya</li>
-        <li>
-          <i class="fab fa-whatsapp" aria-hidden="true"></i> 
-          <a href="https://wa.me/254736194051" target="_blank" rel="noopener">+254 736 194051</a>
-        </li>
-        <li>
-          <i class="fas fa-envelope" aria-hidden="true"></i> 
-          <a href="mailto:info@sonnysayisolutions.co.ke">info@sonnysayisolutions.co.ke</a>
-        </li>
+        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254736194051">+254 736 194051</a></li>
+        <li><i class="fas fa-envelope"></i> <a href="mailto:info@sonnysayisolutions.co.ke">info@sonnysayisolutions.co.ke</a></li>
       </ul>
     </div>
   </div>
-
   <div class="footer-bottom">
-    <p>&copy; 2026 Sonny Sayi Solutions — Digital Clarity for Kenyan Business Growth</p>
+    &copy; 2026 Sonny Sayi Solutions — Digital Clarity for Kenyan Business Growth
   </div>
 </footer>
-
+<script src="portfolio.js"></script>
 </body>
 </html>
