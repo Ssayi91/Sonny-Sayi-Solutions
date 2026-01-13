@@ -204,6 +204,7 @@ ul {
   background:
     radial-gradient(60% 40% at 70% 10%, rgba(143,211,255,0.06), transparent),
     var(--bg-main);
+  margin-top: 20px;
 }
 
 .hero-inner {
@@ -495,6 +496,12 @@ ul {
 }
 
 /* Responsive */
+
+@media screen and (max-width: 720px) {
+  .hero-inner {
+    margin-top: 15px;
+}
+}
 @media (max-width: 600px) {
   .site-footer {
     padding: 2.5rem 1.2rem 1.2rem;
@@ -531,6 +538,7 @@ ul {
 @media (max-width: 600px) {
   .service-hero {
     padding: 4.5rem 1.2rem 3.5rem;
+    margin-top: 50px;
   }
 
   .services-wrapper {
