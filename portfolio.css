@@ -487,7 +487,9 @@ INTRO
   font-size: 1.1rem;
 }
 
-/* ===================== FOOTER ===================== */
+/* =====================================================
+FOOTER
+===================================================== */
 .site-footer {
   background: #080a0d;
   color: #aaa;
@@ -532,30 +534,35 @@ INTRO
 
 .footer-col ul li a:hover {
   opacity: 1;
-  color: #11A9E6;
+  color: #6cf2c2;
 }
 
 .footer-col ul li i {
   margin-right: 0.6rem;
-  color: #11A9E6;
+  color: #6cf2c2;
   width: 16px;
 }
 
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 .footer-social a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(17, 169, 230, 0.1);
-  color: #11A9E6;
-  margin-right: 0.8rem;
+  background: rgba(108, 242, 194, 0.1);
+  color: #6cf2c2;
   transition: background 0.3s;
 }
 
 .footer-social a:hover {
-  background: rgba(17, 169, 230, 0.25);
+  background: rgba(108, 242, 194, 0.25);
 }
 
 .footer-bottom {
@@ -566,6 +573,18 @@ INTRO
   border-top: 1px solid rgba(255,255,255,0.05);
   font-size: 0.9rem;
   opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* ===================== ANIMATIONS ===================== */
@@ -629,9 +648,5 @@ INTRO
 
   .portfolio-cta h2 {
     font-size: 1.8rem;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
   }
 }
