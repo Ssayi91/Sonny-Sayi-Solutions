@@ -438,7 +438,9 @@ PRICING SECTION — REFINED WITH PARALLAX
   font-size: 1.1rem;
 }
 
-/* Pricing Grid */
+/* =========================
+Premium Pricing Section CSS
+========================= */
 .pricing-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -455,8 +457,8 @@ PRICING SECTION — REFINED WITH PARALLAX
 }
 
 .pricing-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(108, 242, 194, 0.3);
+  transform: translateY(-6px);
+  border-color: rgba(108, 242, 194, 0.5);
 }
 
 .badge {
@@ -490,7 +492,7 @@ PRICING SECTION — REFINED WITH PARALLAX
 }
 
 .tagline {
-  opacity: 0.85;
+  opacity: 0.9;
   margin-bottom: 1.4rem;
   font-weight: 500;
   line-height: 1.5;
@@ -498,14 +500,14 @@ PRICING SECTION — REFINED WITH PARALLAX
 
 .features {
   list-style: none;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .features li {
   display: flex;
   align-items: flex-start;
   gap: 0.7rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.7rem;
   font-weight: 500;
   opacity: 0.9;
 }
@@ -516,7 +518,13 @@ PRICING SECTION — REFINED WITH PARALLAX
   flex-shrink: 0;
 }
 
-/* Buttons */
+.scaling-note {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.2rem;
+  font-style: italic;
+}
+
 .btn-pricing {
   display: inline-block;
   background: #6cf2c2;
@@ -533,32 +541,28 @@ PRICING SECTION — REFINED WITH PARALLAX
   background: #58e5b0;
 }
 
-.btn-toggle {
-  background: none;
-  border: none;
-  color: #6cf2c2;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 0.95rem;
-  transition: opacity 0.2s;
+.pricing-education {
+  margin-top: 3rem;
+  text-align: center;
 }
 
-.btn-toggle:hover {
-  opacity: 0.85;
+.pricing-education h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
 }
 
-.extra-features ul {
-  list-style: none;
-  padding-left: 0.5rem;
+.pricing-education ul {
+  list-style: disc;
+  display: inline-block;
+  text-align: left;
+  padding-left: 1.2rem;
 }
 
-.extra-features li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.7rem;
+.pricing-education ul li {
   margin-bottom: 0.7rem;
-  font-size: 0.95rem;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 /* DESKTOP GRID */
@@ -573,70 +577,163 @@ PRICING SECTION — REFINED WITH PARALLAX
     grid-template-columns: repeat(4, 1fr);
   }
 }
-/* =====================================================
-FAQ SECTION
-===================================================== */
-.faq-section {
+/* =========================
+Hosting & Email Services CSS
+========================= */
+.hosting-section {
   padding: 5rem 1.5rem;
   background-color: #0f1217;
   color: #eaeaea;
 }
 
-.faq-section .section-header {
+.hosting-section .section-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.faq-section .section-header h2 {
+.hosting-section .section-header h2 {
   font-size: clamp(1.8rem, 4vw, 2.4rem);
   font-weight: 800;
   margin-bottom: 1rem;
 }
 
-.faq-list {
-  max-width: 800px;
+.hosting-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
   margin: auto;
 }
 
-.faq-item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 1.2rem 0;
+.hosting-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.faq-question {
-  width: 100%;
-  background: none;
-  border: none;
-  color: #eaeaea;
-  text-align: left;
-  font-size: 1.2rem;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  padding: 0;
+.hosting-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(108, 242, 194, 0.5);
 }
 
-.faq-question i {
-  transition: transform 0.3s ease;
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #6cf2c2;
+  color: #0f1217;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.25rem 1.1rem;
+  border-radius: 30px;
+  letter-spacing: 0.08em;
+  z-index: 2;
+}
+
+.hosting-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: #ffffff;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
   color: #6cf2c2;
 }
 
-.faq-question[aria-expanded="true"] i {
-  transform: rotate(180deg);
-}
-
-.faq-answer {
-  margin-top: 1rem;
-  padding-left: 0.2rem;
+.tagline {
+  opacity: 0.9;
+  margin-bottom: 1rem;
   font-weight: 500;
-  opacity: 0.85;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
-.faq-answer p {
-  margin: 0;
+.features {
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+
+.features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.features li i {
+  color: #6cf2c2;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.education-note {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.2rem;
+  font-style: italic;
+}
+
+.btn-hosting {
+  display: inline-block;
+  background: #6cf2c2;
+  color: #0f1217;
+  font-weight: 700;
+  padding: 0.75rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-bottom: 1.2rem;
+  transition: background 0.3s;
+}
+
+.btn-hosting:hover {
+  background: #58e5b0;
+}
+
+.hosting-education {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.hosting-education h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.hosting-education ul {
+  list-style: disc;
+  display: inline-block;
+  text-align: left;
+  padding-left: 1.2rem;
+}
+
+.hosting-education ul li {
+  margin-bottom: 0.7rem;
+  opacity: 0.85;
+}
+
+/* DESKTOP GRID */
+@media (min-width: 768px) {
+  .hosting-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hosting-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 /* =====================================================
 CONTACT SECTION
