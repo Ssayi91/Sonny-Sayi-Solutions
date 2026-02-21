@@ -229,70 +229,25 @@ HERO
 }
 
 .hero-media {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-}
-
-.hero-media video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  position: relative;
+  aspect-ratio: 16/9;
   border-radius: 14px;
+  overflow: hidden;
   background: #000;
 }
 
-.hero-copy h2 {
-  font-size: clamp(1.8rem, 6vw, 2.8rem);
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.hero-copy p {
-  max-width: 520px;
-  margin-top: 1rem;
-  opacity: 0.85;
-  color: #444;
-  font-weight: 500;
-}
-/* 🔊 Hero Sound Toggle - MUST HAVE */
-.hero-media {
-  position: relative; /* Creates positioning context for absolute button */
-}
-
-.sound-toggle {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  z-index: 30; /* Higher than video */
-  background: rgba(0, 0, 0, 0.65);
-  color: white;
+.hero-media iframe {
+  width: 100%;
+  height: 100%;
   border: none;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  font-size: 1.25rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: auto; /* CRITICAL: ensures button is clickable */
-  padding: 0;
-  line-height: 1;
-  transition: background 0.2s, transform 0.1s;
+  border-radius: 14px;
+  transition: opacity 0.3s;
 }
 
-.sound-toggle:hover {
-  background: rgba(0, 0, 0, 0.85);
-  transform: scale(1.05);
-}
-
-/* Prevent video from intercepting clicks */
-.hero-media video {
-  position: relative;
-  z-index: 1;
-  pointer-events: none; /* Lets clicks pass through to button */
-}
-/* =====================================================
+/* Optional: Fade controls when not interacting */
+.hero-media:hover iframe {
+  opacity: 1;
+}/* =====================================================
 EDITORIAL
 ===================================================== */
 .editorial {

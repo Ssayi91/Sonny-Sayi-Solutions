@@ -120,28 +120,18 @@
   ========================= -->
   <section id="hero" class="hero">
   <div class="hero-media">
-    <video 
-  id="hero-video" 
-  autoplay 
-  muted 
-  loop 
-  playsinline 
-  preload="auto"
-  crossorigin="anonymous"  <!-- 🔑 CRITICAL FOR AUDIO + CORS -->
-  poster="https://res.cloudinary.com/dzyxm0rhg/video/upload/clinic-pwa-1.0_acsx6v.jpg"
->
-  <source 
-    src="https://res.cloudinary.com/dzyxm0rhg/video/upload/q_auto:good,f_auto/clinic-pwa-1.0_acsx6v.mp4" 
-    type="video/mp4" 
-  />
-  Your browser does not support the video tag.
-</video>
-    
-    <!-- Unmute/Mute Toggle Button -->
-<button id="toggle-sound" class="sound-toggle" aria-label="Unmute video" onclick="console.log('🔘 BUTTON CLICKED!')">
-  <span class="icon-muted">🔇</span>
-  <span class="icon-unmute" style="display:none">🔊</span>
-</button>  </div>
+    <!-- Cloudinary Embedded Player -->
+    <iframe
+      src="https://player.cloudinary.com/embed/?cloud_name=dzyxm0rhg&public_id=clinic-pwa-1.0_acsx6v&autoplay=true&muted=true&loop=true&controls=true&show_logo=false"
+      width="16"
+      height="9"
+      style="width: 100%; height: 100%; aspect-ratio: 16/9; border: none; border-radius: 14px;"
+      allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+      allowfullscreen
+      loading="lazy"
+      title="Hero video"
+    ></iframe>
+  </div>
   
   <div class="hero-copy">
     <h2>
