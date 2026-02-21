@@ -119,22 +119,41 @@
   HERO MEDIA
   ========================= -->
   <section id="hero" class="hero">
-    <div class="hero-media">
-      <video autoplay muted loop playsinline>
-        <source src="assets/PropertyDesign.web.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div class="hero-copy">
-      <h2>
-        We design the systems<br />
-        behind successful<br />
-        modern businesses.
-      </h2>
-      <p>
-        Websites, IT infrastructure, and CRM platforms — built to remove chaos and support growth.
-      </p>
-    </div>
-  </section>
+  <div class="hero-media">
+    <video 
+  id="hero-video" 
+  autoplay 
+  muted 
+  loop 
+  playsinline 
+  preload="auto"
+  crossorigin="anonymous"  <!-- 🔑 CRITICAL FOR AUDIO + CORS -->
+  poster="https://res.cloudinary.com/dzyxm0rhg/video/upload/clinic-pwa-1.0_acsx6v.jpg"
+>
+  <source 
+    src="https://res.cloudinary.com/dzyxm0rhg/video/upload/q_auto:good,f_auto/clinic-pwa-1.0_acsx6v.mp4" 
+    type="video/mp4" 
+  />
+  Your browser does not support the video tag.
+</video>
+    
+    <!-- Unmute/Mute Toggle Button -->
+<button id="toggle-sound" class="sound-toggle" aria-label="Unmute video" onclick="console.log('🔘 BUTTON CLICKED!')">
+  <span class="icon-muted">🔇</span>
+  <span class="icon-unmute" style="display:none">🔊</span>
+</button>  </div>
+  
+  <div class="hero-copy">
+    <h2>
+      We design the systems<br />
+      behind successful<br />
+      modern businesses.
+    </h2>
+    <p>
+      Websites, IT infrastructure, and CRM platforms — built to remove chaos and support growth.
+    </p>
+  </div>
+</section>
 
   <!-- =========================
   EDITORIAL BREAK

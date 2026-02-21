@@ -189,3 +189,62 @@ document.querySelectorAll('.view-more-btn').forEach(button => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const video = document.getElementById('hero-video');
+  const toggleBtn = document.getElementById('toggle-sound');
+  
+  if (!video || !toggleBtn) {
+    console.warn('⚠️ Hero video or toggle button not found');
+    return;
+  }
+  
+  const iconMuted = toggleBtn.querySelector('.icon-muted');
+  const iconUnmute = toggleBtn.querySelector('.icon-unmute');
+  
+  function updateIcon() {
+    if (!iconMuted || !iconUnmute) return;
+    const isMuted = video.muted;
+    iconMuted.style.display = isMuted ? 'inline' : 'none';
+    iconUnmute.style.display = isMuted ? 'none' : 'inline';
+    toggleBtn.setAttribute('aria-label', isMuted ? 'Unmute video' : 'Mute video');
+  }
+  
+  toggleBtn.addEventListener('click', async function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('🔘 Toggle clicked');
+    
+    // Toggle mute
+    video.muted = !video.muted;
+    
+    if (!video.muted) {
+      video.volume = 1;
+      console.log('🔊 Unmuting + ensuring playback...');
+      
+      // Re-play if paused (handles browser autoplay policies)
+      if (video.paused) {
+        try {
+          await video.play();
+          console.log('✅ Playback started with sound');
+        } catch (err) {
+          console.error('❌ Play failed:', err.name, err.message);
+        }
+      }
+    }
+    
+    updateIcon();
+    console.log('🔇 Mute:', video.muted, '| Volume:', video.volume);
+  });
+  
+  updateIcon();
+  
+  // Debug: Log when video is ready
+  video.addEventListener('loadedmetadata', () => {
+    console.log('🎬 Video loaded | Duration:', video.duration.toFixed(2) + 's');
+  });
+  
+  // Debug: Catch playback errors
+  video.addEventListener('error', (e) => {
+    console.error('❌ Video error code:', video.error?.code, video.error?.message);
+  });
+});

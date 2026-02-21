@@ -254,7 +254,44 @@ HERO
   color: #444;
   font-weight: 500;
 }
+/* 🔊 Hero Sound Toggle - MUST HAVE */
+.hero-media {
+  position: relative; /* Creates positioning context for absolute button */
+}
 
+.sound-toggle {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 30; /* Higher than video */
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto; /* CRITICAL: ensures button is clickable */
+  padding: 0;
+  line-height: 1;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.sound-toggle:hover {
+  background: rgba(0, 0, 0, 0.85);
+  transform: scale(1.05);
+}
+
+/* Prevent video from intercepting clicks */
+.hero-media video {
+  position: relative;
+  z-index: 1;
+  pointer-events: none; /* Lets clicks pass through to button */
+}
 /* =====================================================
 EDITORIAL
 ===================================================== */
